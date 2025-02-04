@@ -10,7 +10,7 @@ I don't think overheating is really an issue but idrk.
 
 A mess!
 
-![image]('../../assets/thing_that_joe_handsome_made.png')
+![image](./../../assets/thing_that_joe_handsome_made.png)
 
 Here's an image of the LTSpice schematic
 
