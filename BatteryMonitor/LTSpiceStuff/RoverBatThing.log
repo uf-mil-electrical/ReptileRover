@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\jgood\Documents\GitHub\MIL\ReptileRover\BatteryMonitor\LTSpiceStuff\RoverBatThing.asc
-Start Time: Mon Feb  3 19:39:48 2025
+Start Time: Thu Feb  6 19:43:55 2025
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -27,5 +27,5 @@ Gmin = 4.06714
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 1.633 seconds.
+Total elapsed time: 0.982 seconds.
 
