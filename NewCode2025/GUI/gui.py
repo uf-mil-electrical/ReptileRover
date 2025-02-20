@@ -1,10 +1,9 @@
-import customtkinter as ctk
 import tkinter as tk
+import customtkinter as ctk
 import subprocess
-from gpiozero import PWMOutputDevice
+import lgpio
 
-pwm_pin = 14
-left_motors = PWMOutputDevice(pwm_pin)
+h = lgpio.gpiochip_open(0)
 
 # Define the initial key bindings (default to WASD)
 key_bindings = {
