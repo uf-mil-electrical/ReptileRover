@@ -9,7 +9,7 @@ OpenOutputs=1
 ArchiveProject=0
 TimestampOutput=0
 SeparateFolders=0
-TemplateLocationPath=C:\Users\russe\Repositories\MIL\Useful-Documents\Altium\Schematic Templates\
+TemplateLocationPath=C:\Users\russe\OneDrive\Documents\AltiumLL\Document Templates\
 PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
 AllowPortNetNames=0
@@ -50,7 +50,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Main MCU.SchDoc
+DocumentPath=Primary MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -84,6 +84,57 @@ GenerateClassCluster=0
 DocumentUniqueId=NFEDRBUA
 
 [Document3]
+DocumentPath=Battery Monitoring.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=2
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IQKLWRYA
+
+[Document4]
+DocumentPath=DC Step-Down Converter.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=3
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=DICTDDGR
+
+[Document5]
+DocumentPath=Seven-Seg Displays.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=4
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=DQWTKGKF
+
+[Document6]
 DocumentPath=..\..\..\..\..\OneDrive\Documents\AltiumLL\Library\Miscellaneous Connectors\Miscellaneous Connectors.LibPkg
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document4]
+[Document7]
 DocumentPath=..\..\..\..\..\OneDrive\Documents\AltiumLL\Library\Miscellaneous Connectors\Project Outputs for Miscellaneous Connectors\Miscellaneous Connectors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document8]
 DocumentPath=..\..\..\..\..\OneDrive\Documents\AltiumLL\Library\Miscellaneous Devices\Project Outputs for Miscellaneous Devices\Miscellaneous Devices.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -133,6 +184,75 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document9]
+DocumentPath=main.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MKYKIBTO
+
+[Parameter1]
+Name=SheetTotal
+Value=4
+
+[Parameter2]
+Name=Revisor4
+Value=*
+
+[Parameter3]
+Name=Revisor3
+Value=*
+
+[Parameter4]
+Name=Revisor2
+Value=*
+
+[Parameter5]
+Name=Revisor1
+Value=*
+
+[Parameter6]
+Name=Revision
+Value=0
+
+[Parameter7]
+Name=Des3
+Value=*
+
+[Parameter8]
+Name=Des2
+Value=*
+
+[Parameter9]
+Name=Des1
+Value=*
+
+[Parameter10]
+Name=Author4
+Value=*
+
+[Parameter11]
+Name=Author3
+Value=*
+
+[Parameter12]
+Name=Author2
+Value=*
+
+[Parameter13]
+Name=Author1
+Value=Russell MacGregor
 
 [Configuration1]
 Name=Sources

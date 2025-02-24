@@ -1,2 +1,3 @@
-Record=TopLevelDocument|FileName=Main MCU.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Main MCU.SchDoc|FileName=USB Programmer.SchDoc|SheetNumber=2
+Record=TopLevelDocument|FileName=Battery Monitoring.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Battery Monitoring.SchDoc|FileName=Primary MCU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Battery Monitoring.SchDoc|FileName=USB Programmer.SchDoc|SheetNumber=2
