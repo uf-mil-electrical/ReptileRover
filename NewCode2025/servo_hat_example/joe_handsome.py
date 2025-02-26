@@ -92,3 +92,4 @@ if __name__=='__main__':
   while True:
       x =float(input("put that thang: "))
       pwm.set_pwm_percent(0, x)
+# test by joe Handsome

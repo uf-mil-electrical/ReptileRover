@@ -3,6 +3,8 @@
 #  Connects to Arduino via I2C and periodically blinks an LED
 #  Author: William 'jawn-smith' Wilson
 
+# test by jo H
+
 import lgpio
 import time
 
