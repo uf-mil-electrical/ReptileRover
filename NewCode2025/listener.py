@@ -1,24 +1,31 @@
-#  Raspberry Pi Leader for Arduino Follower
-#  Uses lgpio library, compatible with kernel 5.11
-#  Connects to Arduino via I2C and periodically blinks an LED
-#  Author: William 'jawn-smith' Wilson
-
-# test by jo H
-
 import lgpio
 import time
 
-addr = 0x0 # bus address
+# Define the GPIO pin number
+GPIO_PIN = 4  # Change this to the desired GPIO pin number
+              # gpio number not pin number
 
-h = lgpio.i2c_open(1, addr)
+# Open the GPIO chip (usually chip 0 is used on the Raspberry Pi)
+chip = lgpio.gpiochip_open(0)
+
+# Set the GPIO pin as an output
+lgpio.gpio_claim_output(chip, GPIO_PIN)
+
 while True:
-    try:
-        lgpio.i2c_write_byte(h, 0x0) # switch it off
-        time.sleep(1)
-        lgpio.i2c_write_byte(h, 0x1) # switch it on
-        time.sleep(1)
-    except KeyboardInterrupt:
-        lgpio.i2c_write_byte(h, 0x0) # switch it off
-        lgpio.i2c_close(h)
+
+    # Output a HIGH signal (1) to the pin
+    lgpio.gpio_write(chip, GPIO_PIN, 1)
+    print(f"Output 1 on GPIO pin {GPIO_PIN}")
+
+    # Wait for 2 seconds
+    time.sleep(2)
+
+    # Output a LOW signal (0) to the pin
+    lgpio.gpio_write(chip, GPIO_PIN, 0)
+    print(f"Output 0 on GPIO pin {GPIO_PIN}")
+
+    if input("a:") == 'q':
         break
 
+# Close the GPIO chip
+lgpio.gpiochip_close(chip)

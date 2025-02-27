@@ -81,9 +81,10 @@ class PCA9685:
     pulse = pulse*4096/20000        #PWM frequency is 50HZ,the period is 20000us
     self.setPWM(channel, 0, int(pulse))
 
+  # made by Joseph Handsome
   def set_pwm_percent(self, channel, duty_percentage=0.5):
     "sets the servo PWM"
-    self.setPWM(channel, 0, int(duty_percentage * (4096-1)))
+    self.setPWM(channel, 0, int((duty_percentage/2) * (4096-1)))
 
 # ============================================================================
 # END Raspi PCA9685 16-Channel PWM Servo Driver
