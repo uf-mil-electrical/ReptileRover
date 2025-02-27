@@ -1,6 +1,8 @@
 import lgpio
 import time
 
+# gpio example not used for anything
+
 # Define the GPIO pin number
 GPIO_PIN = 4  # Change this to the desired GPIO pin number
               # gpio number not pin number
