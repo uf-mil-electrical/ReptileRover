@@ -203,56 +203,56 @@ GenerateClassCluster=0
 DocumentUniqueId=MKYKIBTO
 
 [Parameter1]
-Name=SheetTotal
-Value=4
+Name=Author1
+Value=Russell MacGregor
 
 [Parameter2]
-Name=Revisor4
-Value=*
+Name=Author2
+Value=
 
 [Parameter3]
-Name=Revisor3
-Value=*
+Name=Author3
+Value=
 
 [Parameter4]
-Name=Revisor2
-Value=*
+Name=Author4
+Value=
 
 [Parameter5]
-Name=Revisor1
-Value=*
+Name=Des1
+Value=
 
 [Parameter6]
-Name=Revision
-Value=0
+Name=Des2
+Value=
 
 [Parameter7]
 Name=Des3
-Value=*
+Value=
 
 [Parameter8]
-Name=Des2
-Value=*
+Name=Revision
+Value=0
 
 [Parameter9]
-Name=Des1
-Value=*
+Name=Revisor1
+Value=
 
 [Parameter10]
-Name=Author4
-Value=*
+Name=Revisor2
+Value=
 
 [Parameter11]
-Name=Author3
-Value=*
+Name=Revisor3
+Value=
 
 [Parameter12]
-Name=Author2
-Value=*
+Name=Revisor4
+Value=
 
 [Parameter13]
-Name=Author1
-Value=Russell MacGregor
+Name=SheetTotal
+Value=4
 
 [Configuration1]
 Name=Sources
@@ -380,7 +380,7 @@ PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate
 Name=Documentation Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputType1=Composite
 OutputName1=Composite Drawing
 OutputDocumentPath1=
@@ -452,7 +452,9 @@ OutputName12=Schematic Prints
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
-PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=0.70|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=Letter|PaperIndex=1
+Configuration12_Name1=OutputConfigurationParameter1
+Configuration12_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=C:\Users\russe\Repositories\MIL\ReptileRover\BatteryMonitor\PCB Design\Primary MCU.SchDoc
 OutputType13=SimView Print
 OutputName13=SimView Prints
 OutputDocumentPath13=
@@ -1211,6 +1213,14 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=+5V|NetColor=clAqua
+Net2=NetName=16U2_AVCC|NetColor=clAqua
+Net3=NetName=GND|NetColor=clFuchsia
+Net4=NetName=LM2576_FEEDBACK|NetColor=clAqua
+Net5=NetName=U3 GND|NetColor=clFuchsia
+Net6=NetName=U3 VCC|NetColor=clAqua
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
