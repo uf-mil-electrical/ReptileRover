@@ -2,7 +2,7 @@ from my_joy_listener.PWM_chip_driver import PCA9685
 import lgpio
 
 chip = lgpio.gpiochip_open(0)
-PWM_FREQ = 1000
+PWM_FREQ = 50
 pwm = PCA9685(0x40, debug=False) # lowk this 0x40 number is non-negoicalble (I2C addy of PWM board)
 pwm.setPWMFreq(PWM_FREQ) # 50 MHz ??
 
@@ -56,7 +56,8 @@ class DCMotor:
         lgpio.gpio_write(chip, self.gpio_two, 0)
 
     def set_speed(self, pwm_percent):
-        assert pwm_percent > 0.0, "no negative pwm"
+        pwm_percent = abs(pwm_percent)
+
         assert pwm_percent <= 1.0, "pwm greater than 1"
 
         pwm.set_pwm_percent(self.channel, pwm_percent)
