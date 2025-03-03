@@ -1215,12 +1215,12 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=+5V|NetColor=clAqua
-Net2=NetName=16U2_AVCC|NetColor=clAqua
-Net3=NetName=GND|NetColor=clFuchsia
-Net4=NetName=LM2576_FEEDBACK|NetColor=clAqua
-Net5=NetName=U3 GND|NetColor=clFuchsia
-Net6=NetName=U3 VCC|NetColor=clAqua
+Net1=NetName=+5V|NetColor=$00008EBC
+Net2=NetName=16U2_AVCC|NetColor=$00008EBC
+Net3=NetName=GND|NetColor=clAqua
+Net4=NetName=LM2576_FEEDBACK|NetColor=$00008EBC
+Net5=NetName=U3 GND|NetColor=clAqua
+Net6=NetName=U3 VCC|NetColor=$00008EBC
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
