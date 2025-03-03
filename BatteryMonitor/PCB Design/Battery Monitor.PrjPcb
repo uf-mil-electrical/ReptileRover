@@ -202,6 +202,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MKYKIBTO
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Battery Monitor\Design Rule Check - main.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Author1
 Value=Russell MacGregor
