@@ -1,0 +1,8 @@
+[0.052s] Invoking command in '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300 -- -j4 -l4
+[0.335s] [ 50%] [32mBuilding CXX object CMakeFiles/stim300_node.dir/src/stim300_node.cpp.o[0m
+[0.361s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/reptilerover/ReptileRover/NewCode2025/stim300/src/stim300_node.cpp: No such file or directory
+[0.361s] compilation terminated.
+[0.363s] gmake[2]: *** [CMakeFiles/stim300_node.dir/build.make:76: CMakeFiles/stim300_node.dir/src/stim300_node.cpp.o] Error 1
+[0.364s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/stim300_node.dir/all] Error 2
+[0.365s] gmake: *** [Makefile:146: all] Error 2
+[0.372s] Invoked command in '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300 -- -j4 -l4

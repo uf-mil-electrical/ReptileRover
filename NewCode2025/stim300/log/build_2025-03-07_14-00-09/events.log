@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000919] (stim300) JobQueued: {'identifier': 'stim300', 'dependencies': OrderedDict()}
+[0.001717] (stim300) JobStarted: {'identifier': 'stim300'}
+[0.049828] (stim300) JobProgress: {'identifier': 'stim300', 'progress': 'cmake'}
+[0.051711] (stim300) Command: {'cmd': ['/usr/bin/cmake', '/home/reptilerover/ReptileRover/NewCode2025/stim300', '-DCMAKE_INSTALL_PREFIX=/home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300'], 'cwd': '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'reptilerover', 'SSH_CLIENT': '10.138.38.95 33412 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/reptilerover', 'OLDPWD': '/home/reptilerover/ReptileRover/NewCode2025', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', '_colcon_cd_root': '/home/reptilerover/mil2', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'reptilerover', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '11', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GZ_VERSION': 'harmonic', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.138.38.95 33412 10.138.220.139 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099316] (-) TimerEvent: {}
+[0.199961] (-) TimerEvent: {}
+[0.300545] (-) TimerEvent: {}
+[0.401151] (-) TimerEvent: {}
+[0.501779] (-) TimerEvent: {}
+[0.602358] (-) TimerEvent: {}
+[0.703046] (-) TimerEvent: {}
+[0.803841] (-) TimerEvent: {}
+[0.904417] (-) TimerEvent: {}
+[1.005062] (-) TimerEvent: {}
+[1.105642] (-) TimerEvent: {}
+[1.206269] (-) TimerEvent: {}
+[1.209364] (stim300) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.306439] (-) TimerEvent: {}
+[1.407043] (-) TimerEvent: {}
+[1.507615] (-) TimerEvent: {}
+[1.608232] (-) TimerEvent: {}
+[1.708828] (-) TimerEvent: {}
+[1.809455] (-) TimerEvent: {}
+[1.910128] (-) TimerEvent: {}
+[2.010832] (-) TimerEvent: {}
+[2.029746] (stim300) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.111012] (-) TimerEvent: {}
+[2.126931] (stim300) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.211183] (-) TimerEvent: {}
+[2.311800] (-) TimerEvent: {}
+[2.412407] (-) TimerEvent: {}
+[2.513126] (-) TimerEvent: {}
+[2.613806] (-) TimerEvent: {}
+[2.654972] (stim300) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.690002] (stim300) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.694117] (stim300) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.696320] (stim300) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.713977] (-) TimerEvent: {}
+[2.744221] (stim300) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.814170] (-) TimerEvent: {}
+[2.914801] (-) TimerEvent: {}
+[3.015504] (-) TimerEvent: {}
+[3.116204] (-) TimerEvent: {}
+[3.216979] (-) TimerEvent: {}
+[3.269925] (stim300) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.304412] (stim300) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.305435] (stim300) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.307207] (stim300) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.317092] (-) TimerEvent: {}
+[3.366300] (stim300) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.417289] (-) TimerEvent: {}
+[3.518111] (-) TimerEvent: {}
+[3.618737] (-) TimerEvent: {}
+[3.719321] (-) TimerEvent: {}
+[3.819990] (-) TimerEvent: {}
+[3.920591] (-) TimerEvent: {}
+[4.021256] (-) TimerEvent: {}
+[4.121835] (-) TimerEvent: {}
+[4.222390] (-) TimerEvent: {}
+[4.287349] (stim300) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.322562] (-) TimerEvent: {}
+[4.423169] (-) TimerEvent: {}
+[4.523792] (-) TimerEvent: {}
+[4.624459] (-) TimerEvent: {}
+[4.725206] (-) TimerEvent: {}
+[4.825785] (-) TimerEvent: {}
+[4.926385] (-) TimerEvent: {}
+[5.026970] (-) TimerEvent: {}
+[5.127509] (-) TimerEvent: {}
+[5.228092] (-) TimerEvent: {}
+[5.311575] (stim300) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.328281] (-) TimerEvent: {}
+[5.428954] (-) TimerEvent: {}
+[5.529517] (-) TimerEvent: {}
+[5.630274] (-) TimerEvent: {}
+[5.731089] (-) TimerEvent: {}
+[5.831747] (-) TimerEvent: {}
+[5.932330] (-) TimerEvent: {}
+[6.032927] (-) TimerEvent: {}
+[6.091271] (stim300) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.091991] (stim300) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/reptilerover/ReptileRover/NewCode2025/stim300/include>\n'}
+[6.092387] (stim300) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.116955] (stim300) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.133088] (-) TimerEvent: {}
+[6.179819] (stim300) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.180406] (stim300) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.191605] (stim300) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.204308] (stim300) StdoutLine: {'line': b'-- Configuring done (5.9s)\n'}
+[6.230928] (stim300) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[6.233236] (-) TimerEvent: {}
+[6.240985] (stim300) StdoutLine: {'line': b'-- Build files have been written to: /home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300\n'}
+[6.261104] (stim300) CommandEnded: {'returncode': 0}
+[6.262601] (stim300) JobProgress: {'identifier': 'stim300', 'progress': 'build'}
+[6.264557] (stim300) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', '--', '-j4', '-l4'], 'cwd': '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'reptilerover', 'SSH_CLIENT': '10.138.38.95 33412 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/reptilerover', 'OLDPWD': '/home/reptilerover/ReptileRover/NewCode2025', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', '_colcon_cd_root': '/home/reptilerover/mil2', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'reptilerover', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '11', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GZ_VERSION': 'harmonic', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.138.38.95 33412 10.138.220.139 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.333436] (-) TimerEvent: {}
+[6.434107] (-) TimerEvent: {}
+[6.534790] (-) TimerEvent: {}
+[6.550284] (stim300) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/stim300_node.dir/src/stim300_node.cpp.o\x1b[0m\n'}
+[6.634978] (-) TimerEvent: {}
+[6.735583] (-) TimerEvent: {}
+[6.762801] (stim300) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stim300_node\x1b[0m\n'}
+[6.835792] (-) TimerEvent: {}
+[6.936403] (-) TimerEvent: {}
+[7.004467] (stim300) StdoutLine: {'line': b'[100%] Built target stim300_node\n'}
+[7.036606] (-) TimerEvent: {}
+[7.064586] (stim300) CommandEnded: {'returncode': 0}
+[7.066367] (stim300) JobProgress: {'identifier': 'stim300', 'progress': 'install'}
+[7.118754] (stim300) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300'], 'cwd': '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'reptilerover', 'SSH_CLIENT': '10.138.38.95 33412 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/reptilerover', 'OLDPWD': '/home/reptilerover/ReptileRover/NewCode2025', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', '_colcon_cd_root': '/home/reptilerover/mil2', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'reptilerover', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '11', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GZ_VERSION': 'harmonic', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.138.38.95 33412 10.138.220.139 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.136794] (-) TimerEvent: {}
+[7.165117] (stim300) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.166027] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/lib/stim300/stim300_node\n'}
+[7.168655] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/ament_index/resource_index/package_run_dependencies/stim300\n'}
+[7.170331] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/ament_index/resource_index/parent_prefix_path/stim300\n'}
+[7.171867] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/environment/ament_prefix_path.sh\n'}
+[7.172947] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/environment/ament_prefix_path.dsv\n'}
+[7.174079] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/environment/path.sh\n'}
+[7.175186] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/environment/path.dsv\n'}
+[7.176267] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/local_setup.bash\n'}
+[7.177394] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/local_setup.sh\n'}
+[7.178535] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/local_setup.zsh\n'}
+[7.179747] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/local_setup.dsv\n'}
+[7.180841] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/package.dsv\n'}
+[7.182254] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/ament_index/resource_index/packages/stim300\n'}
+[7.183696] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/cmake/stim300Config.cmake\n'}
+[7.184659] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/cmake/stim300Config-version.cmake\n'}
+[7.185773] (stim300) StdoutLine: {'line': b'-- Installing: /home/reptilerover/ReptileRover/NewCode2025/stim300/install/stim300/share/stim300/package.xml\n'}
+[7.192139] (stim300) CommandEnded: {'returncode': 0}
+[7.238035] (-) TimerEvent: {}
+[7.272455] (stim300) JobEnded: {'identifier': 'stim300', 'rc': 0}
+[7.275198] (-) EventReactorShutdown: {}

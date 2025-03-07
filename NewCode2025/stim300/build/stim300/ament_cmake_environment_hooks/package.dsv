@@ -1,0 +1,4 @@
+source;share/stim300/local_setup.bash
+source;share/stim300/local_setup.dsv
+source;share/stim300/local_setup.sh
+source;share/stim300/local_setup.zsh

@@ -1,0 +1,10 @@
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/uninstall.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/stim300_uninstall.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/stim300_node.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/test.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/edit_cache.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/rebuild_cache.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/list_install_components.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/install.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/install/local.dir
+/home/reptilerover/ReptileRover/NewCode2025/stim300/build/stim300/CMakeFiles/install/strip.dir
