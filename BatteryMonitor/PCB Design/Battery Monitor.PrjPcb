@@ -207,56 +207,56 @@ DocumentPath=Project Outputs for Battery Monitor\Design Rule Check - main.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Author1
-Value=Russell MacGregor
+Name=SheetTotal
+Value=4
 
 [Parameter2]
-Name=Author2
+Name=Revisor4
 Value=
 
 [Parameter3]
-Name=Author3
+Name=Revisor3
 Value=
 
 [Parameter4]
-Name=Author4
+Name=Revisor2
 Value=
 
 [Parameter5]
-Name=Des1
+Name=Revisor1
 Value=
 
 [Parameter6]
-Name=Des2
-Value=
+Name=Revision
+Value=0
 
 [Parameter7]
 Name=Des3
 Value=
 
 [Parameter8]
-Name=Revision
-Value=0
+Name=Des2
+Value=
 
 [Parameter9]
-Name=Revisor1
+Name=Des1
 Value=
 
 [Parameter10]
-Name=Revisor2
+Name=Author4
 Value=
 
 [Parameter11]
-Name=Revisor3
+Name=Author3
 Value=
 
 [Parameter12]
-Name=Revisor4
-Value=
+Name=Author2
+Value= 
 
 [Parameter13]
-Name=SheetTotal
-Value=4
+Name=Author1
+Value=Russell MacGregor
 
 [Configuration1]
 Name=Sources
