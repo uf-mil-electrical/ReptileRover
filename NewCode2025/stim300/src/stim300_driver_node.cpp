@@ -1,11 +1,14 @@
 #include "driver_stim300.h"
 #include "serial_unix.h"
 #include "math.h"
-#include "ros/ros.h" // ros related
-#include "sensor_msgs/Imu.h" // ros related
-#include "std_srvs/Trigger.h" // ros related
-#include "std_srvs/Empty.h" // ros related
 #include "iostream"
+
+// ros related
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/imu.hpp"
+#include "std_srvs/srv/trigger.hpp"
+#include "std_srvs/srv/empty.hpp"
+#include "std_msgs/msg/header.hpp"
 
 bool calibration_mode{false};
 constexpr int NUMBER_OF_CALIBRATION_SAMPLES{100};
@@ -47,46 +50,68 @@ Quaternion FromRPYToQuaternion(EulerAngles angles) // yaw (Z), pitch (Y), roll (
 
     return q;
 }
-
-
-// sending a response to a request
-bool responseCalibrateIMU(std_srvs::Trigger::Request &calibration_request, std_srvs::Trigger::Response &calibration_response)
+void responseCalibrateIMU(
+    const std::shared_ptr<rmw_request_id_t> request_header,  // Metadata (we don't use it in this case)
+    const std::shared_ptr<std_srvs::srv::Trigger::Request> request,  // The request object (empty for Trigger service)
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response) // The response object
 {
+    (void)request;  // We don't need the request in this case, as Trigger service has no request data
 
-    if (calibration_mode == false)
+    if (calibration_mode == false)  // Check if the IMU is not in calibration mode
     {
         calibration_mode = true;
-        calibration_response.message = "IMU in calibration mode ";
-        calibration_response.success = true;
+        response->message = "IMU in calibration mode";  // Set the response message
+        response->success = true;  // Indicate success in the response
     }
-    
-    return true;
+    else
+    {
+        response->message = "IMU is already in calibration mode";  // Handle the case where it's already in calibration mode
+        response->success = false;  // Indicate failure in the response
+    }
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Service triggered for calibration.");
 }
 
+// create publisher and server-client stuff
+void setup(std::shared_ptr<rclcpp::Node> node, rclcpp::Publisher<std_msgs::msg::String>::SharedPtr& pub){
+	pub = node->create_publisher<sensor_msgs::msg::Imu("imu/data", 10)>;
+	auto service = node->create_service<std_srvs::srv::Trigger>(
+	    "imu_trigger_service", 
+	    responseCalibrateIMU
+	);
+}
 
 int main(int argc, char** argv)
 {
   // ros node start
-  ros::init(argc, argv, "stim300_driver_node");
-  ros::NodeHandle node;
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("stim300_node")
 
-  std::string device_name;
+  // TODO replace with get calls
+  std::string device_name = "/dev/ttyUSB0"; // CHANGE to absolute name or whatever TODO
   double variance_gyro{0};
   double variance_acc{0};
   int sample_rate{0};
   double gravity{0};
 
-
   // node params?
+  /*
   node.param<std::string>("device_name", device_name, "/dev/ttyUSB0");
   node.param("variance_gyro", variance_gyro,0.0001*2*4.6*pow(10,-4));
   node.param("variance_acc", variance_acc, 0.000055); 
   node.param("sample_rate", sample_rate, 125);
   node.param("gravity", gravity, 9.80665);
+  */
+
+  node->declare_parameter<std::string>("device_name", "/dev/ttyUSB0");
+  node->declare_parameter<double>("variance_gyro", 0.0001 * 2 * 4.6 * pow(10, -4));
+  node->declare_parameter<double>("variance_acc", 0.000055);
+  node->declare_parameter<double>("sample_rate", 125);
+  node->declare_parameter<double>("gravity", 9.80665);
 
   // These values have been estimated by having beluga in a pool for a couple of minutes, and then calculate the variance for each values
   // JOE DID NOT ESTIMATE THESE
-  sensor_msgs::Imu stim300msg{};
+  sensor_msgs::msg::Imu stim300msg;
   stim300msg.angular_velocity_covariance[0] = 0.0000027474;
   stim300msg.angular_velocity_covariance[4] = 0.0000027474;
   stim300msg.angular_velocity_covariance[8] = 0.000007312;
@@ -98,25 +123,31 @@ int main(int argc, char** argv)
   stim300msg.orientation.z = 0.00000024358;
   stim300msg.header.frame_id = "imu_0";
 
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr service;
 
-  // topic for raw data
-  ros::Publisher imuSensorPublisher = node.advertise<sensor_msgs::Imu>("imu/data_raw", 1000);
+  setup(node, pub, service);
+
+  // old topic for raw data
+  //ros::Publisher imuSensorPublisher = node.advertise<sensor_msgs::Imu>("imu/data_raw", 1000);
   //ros::Publisher orientationPublisher = node.advertise<sensor_msgs::Imu>("imu/orientation", 1000);
   // server for calibration
-  ros::ServiceServer service = node.advertiseService("IMU_calibration",responseCalibrateIMU);
+  // old ros::ServiceServer service = node.advertiseService("IMU_calibration",responseCalibrateIMU);
 
 
   // New messages are sent from the sensor with sample_rate
   // As loop_rate determines how often we check for new data
   // on the serial buffer, theoretically loop_rate = sample_rate
   // should be okey, but to be sure we double it
-  ros::Rate loop_rate(sample_rate * 2);
+  node.get_param("sample_rate", sample_rate);
+  rclcpp::Rate loop_rate(sample_rate * 2);
 
   try {
+    node.get_parameter("device_name", device_name);
     SerialUnix serial_driver(device_name, stim_const::BaudRate::BAUD_921600);
     DriverStim300 driver_stim300(serial_driver);
 
-    ROS_INFO("STIM300 IMU driver initialized successfully");
+    RCLCPP_INFO("STIM300 IMU driver initialized successfully");
 
     int difference_in_dataGram{0};
     int count_messages{0};
@@ -151,7 +182,7 @@ int main(int argc, char** argv)
     double dropped_gyro_z_msg{0.0};
 
     // horrid loop of everything
-    while (ros::ok())
+    while (rclcpp::ok())
     {
       switch (driver_stim300.update())
       {
@@ -190,9 +221,9 @@ int main(int argc, char** argv)
                     average_calibration_pitch = atan2(-inclination_x_average,sqrt(pow(inclination_y_average,2)+pow(inclination_z_average,2)));
                     std::cout<<average_calibration_roll<<std::endl;
                     std::cout<<average_calibration_pitch<<std::endl;
-                    ROS_INFO("roll: %f", average_calibration_roll);
-                    ROS_INFO("pitch: %f", average_calibration_pitch);
-                    ROS_INFO("IMU Calibrated");
+                    RCLCPP_INFO("roll: %f", average_calibration_roll);
+                    RCLCPP_INFO("pitch: %f", average_calibration_pitch);
+                    RCLCPP_INFO("IMU Calibrated");
                     calibration_mode = false;
                 }
               break;  
@@ -206,6 +237,7 @@ int main(int argc, char** argv)
                     // Acceleration wild point filter
 
                     // Previous message
+		    node.get_param("gravity", gravity);
                     acceleration_buffer_x.push_back(driver_stim300.getAccX() * gravity);
                     acceleration_buffer_y.push_back(driver_stim300.getAccY() * gravity);
                     acceleration_buffer_z.push_back(driver_stim300.getAccZ() * gravity);
@@ -252,6 +284,7 @@ int main(int argc, char** argv)
                     }
                     else
                     {
+		      node.get_param("gravity", gravity);
                       stim300msg.linear_acceleration.x = driver_stim300.getAccX() * gravity;
                       stim300msg.linear_acceleration.y = driver_stim300.getAccY() * gravity;
                       stim300msg.linear_acceleration.z = driver_stim300.getAccZ() * gravity;
@@ -313,38 +346,38 @@ int main(int argc, char** argv)
                     stim300msg.orientation.x = q.x;
                     stim300msg.orientation.y = q.y;
                     stim300msg.orientation.z = q.z;
-                    imuSensorPublisher.publish(stim300msg);
+                    pub.publish(stim300msg);
                     break;
             }
         case Stim300Status::CONFIG_CHANGED:
-          ROS_INFO("Updated Stim 300 imu config: ");
-          ROS_INFO("%s", driver_stim300.printSensorConfig().c_str());
+          RCLCPP_INFO("Updated Stim 300 imu config: ");
+          RCLCPP_INFO("%s", driver_stim300.printSensorConfig().c_str());
           loop_rate = driver_stim300.getSampleRate()*2;
           break;
         case Stim300Status::STARTING_SENSOR:
-          ROS_INFO("Stim 300 IMU is warming up.");
+          RCLCPP_INFO("Stim 300 IMU is warming up.");
           break;
         case Stim300Status::SYSTEM_INTEGRITY_ERROR:
-          ROS_WARN("Stim 300 IMU system integrity error.");
+          RCLCPP_WARN("Stim 300 IMU system integrity error.");
           break;
         case Stim300Status::OVERLOAD:
-          ROS_WARN("Stim 300 IMU overload.");
+          RCLCPP_WARN("Stim 300 IMU overload.");
           break;
         case Stim300Status::ERROR_IN_MEASUREMENT_CHANNEL:
-          ROS_WARN("Stim 300 IMU error in measurement channel.");
+          RCLCPP_WARN("Stim 300 IMU error in measurement channel.");
           break;
         case Stim300Status::ERROR:
-          ROS_WARN("Stim 300 IMU: internal error.");
+          RCLCPP_WARN("Stim 300 IMU: internal error.");
 
       }
 
       loop_rate.sleep();
-      ros::spinOnce();
+      rclcpp::spin_some();
     }
     return 0;
   } catch (std::runtime_error &error) {
     // TODO: Reset IMU
-    ROS_ERROR("%s\n", error.what());
+    RCLCPP_ERROR("%s\n", error.what());
     return 0;
   }
 }
