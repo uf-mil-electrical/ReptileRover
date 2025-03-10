@@ -79,7 +79,7 @@ private:
   uint8_t sensor_status_{0};
 
   Stim300Status readDataStream();
-  bool setDatagramFormat(DatagramIdentifier id);
+  void setDatagramFormat(DatagramIdentifier id);
   static bool verifyChecksum(const std::vector<uint8_t>::const_iterator &begin,
                              const std::vector<uint8_t>::const_iterator &end,
                              const uint8_t &crc_dummy_bytes);

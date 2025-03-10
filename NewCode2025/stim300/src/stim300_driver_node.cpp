@@ -140,7 +140,7 @@ int main(int argc, char** argv)
   // on the serial buffer, theoretically loop_rate = sample_rate
   // should be okey, but to be sure we double it
   node->get_parameter("sample_rate", sample_rate);
-  rclcpp::Rate loop_rate(sample_rate * 2);
+  rclcpp::Rate* loop_rate = new rclcpp::Rate(sample_rate * 2);
 
   try {
     node->get_parameter("device_name", device_name);
@@ -184,11 +184,10 @@ int main(int argc, char** argv)
     // horrid loop of everything
     while (rclcpp::ok())
     {
-      RCLCPP_INFO(node->get_logger(), "b4 update");
-      switch (driver_stim300.update())
+      auto temp =driver_stim300.update();
+      switch (temp)
       {
         case Stim300Status::NORMAL:
-          RCLCPP_INFO(node->get_logger(), "Stim 300 outside operating conditions");
           break;
         case Stim300Status::OUTSIDE_OPERATING_CONDITIONS:
           RCLCPP_INFO(node->get_logger(), "Stim 300 outside operating conditions");
@@ -202,7 +201,7 @@ int main(int argc, char** argv)
               EulerAngles RPY;
            if (calibration_mode == true)
             {
-              //std::cout<<"in calibration_mode"<<std::endl;
+              std::cout<<"in calibration_mode"<<std::endl;
                 if(number_of_samples < NUMBER_OF_CALIBRATION_SAMPLES)
                 {
                     //std::cout<<"in calibration_mode"<<std::endl;
@@ -215,7 +214,7 @@ int main(int argc, char** argv)
                 }
                 else
                 {
-                    //std::cout<<"in else"<<std::endl;
+                    std::cout<<"in else for calib mode"<<std::endl;
                     inclination_x_average = inclination_x_calibration_sum/NUMBER_OF_CALIBRATION_SAMPLES;
                     inclination_y_average = inclination_y_calibration_sum/NUMBER_OF_CALIBRATION_SAMPLES;
                     inclination_z_average = inclination_z_calibration_sum/NUMBER_OF_CALIBRATION_SAMPLES;
@@ -233,6 +232,7 @@ int main(int argc, char** argv)
             }
             else
             {
+                    std::cout<<"taking meas!!!"<<std::endl;
                     RPY.roll = atan2(inclination_y,inclination_z);
                     RPY.pitch = atan2(-inclination_x,sqrt(pow(inclination_y,2)+pow(inclination_z,2)));
                     q = FromRPYToQuaternion(RPY);
@@ -349,6 +349,10 @@ int main(int argc, char** argv)
                     stim300msg.orientation.x = q.x;
                     stim300msg.orientation.y = q.y;
                     stim300msg.orientation.z = q.z;
+		    std::cout << "q.w = "<< q.w << std::endl;
+		    std::cout << "q.x = "<< q.x << std::endl;
+		    std::cout << "q.y = "<< q.y << std::endl;
+		    std::cout << "q.z = "<< q.z << std::endl;
                     pub->publish(stim300msg);
                     break;
             }
@@ -356,7 +360,9 @@ int main(int argc, char** argv)
           RCLCPP_INFO(node->get_logger(), "Updated Stim 300 imu config: ");
           RCLCPP_INFO(node->get_logger(), "%s", driver_stim300.printSensorConfig().c_str());
 	  RCLCPP_ERROR(node->get_logger(), "Joseph Goodman has no idea how to update a rate in place, maybe if we stick it behind a ptr we can just del the ptr and re-assign??");
-          //loop_rate = rclcpp::Rate(driver_stim300.getSampleRate()*2);
+	  delete loop_rate;
+	  loop_rate = nullptr;
+          loop_rate = new rclcpp::Rate(driver_stim300.getSampleRate()*2);
           break;
         case Stim300Status::STARTING_SENSOR:
           RCLCPP_INFO(node->get_logger(), "Stim 300 IMU is warming up.");
@@ -376,7 +382,7 @@ int main(int argc, char** argv)
 
       }
 
-      loop_rate.sleep();
+      loop_rate->sleep();
       rclcpp::spin_some(node);
     }
     return 0;

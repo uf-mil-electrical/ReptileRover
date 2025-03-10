@@ -72,23 +72,22 @@ Stim300Status DriverStim300::readDataStream() {
     case ReadingMode::IdentifyingDatagram:
       if (byte == datagram_id_) {
         // Use current datagram format
-      } else if (byte ==
-                 datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION)) {
+      } else if (byte == datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION)) {
         setDatagramFormat(DatagramIdentifier::CONFIGURATION);
-      } else if (byte == datagramIdentifierToRaw(
-                             DatagramIdentifier::CONFIGURATION_CRLF)) {
+      } else if (byte == datagramIdentifierToRaw( DatagramIdentifier::CONFIGURATION_CRLF)) {
         setDatagramFormat(DatagramIdentifier::CONFIGURATION_CRLF);
       } else {
         if (++n_checked_bytes > 100) {
-          std::cerr << "Not able to recognise datagram" << std::endl;
+          //std::cerr << "Not able to recognise datagram" << std::endl;
           if (read_config_from_sensor_)
             askForConfigDatagram();
           n_checked_bytes = 0;
         }
         continue;
       }
-      // if (n_checked_bytes != 0)
-      //  std::cout << "Checked bytes: " << n_checked_bytes << std::endl;
+       if (n_checked_bytes != 0){
+        std::cout << "Checked bytes: " << n_checked_bytes << std::endl;
+       }
       n_checked_bytes = 0;
       reading_mode_ = ReadingMode::ReadingDatagram;
       buffer_.push_back(byte);
@@ -108,9 +107,7 @@ Stim300Status DriverStim300::readDataStream() {
 
       // else the buffer is filled with a potential new datagram
 
-      if (sensor_config_.normal_datagram_CRLF or
-          datagram_id_ ==
-              datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION_CRLF)) {
+      if (sensor_config_.normal_datagram_CRLF or datagram_id_ == datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION_CRLF)) {
         reading_mode_ = ReadingMode::VerifyingDatagramCR;
         continue;
       }
@@ -122,10 +119,12 @@ Stim300Status DriverStim300::readDataStream() {
         reading_mode_ = ReadingMode::VerifyingDatagramLF;
         continue;
       }
+
       reading_mode_ = ReadingMode::IdentifyingDatagram;
       return Stim300Status::NORMAL;
 
     case ReadingMode::VerifyingDatagramLF:
+
 
       if (byte == 0x0A) {
         break;
@@ -134,22 +133,20 @@ Stim300Status DriverStim300::readDataStream() {
       return Stim300Status::NORMAL;
     } // end reading mode switch
 
+    /*
     if (!verifyChecksum(buffer_.cbegin(), buffer_.cend(), crc_dummy_bytes_)) {
       // The "ID" was likely a byte happening to be equal the datagram id,
       // and not actually the start of a datagram, thus the buffer does
       // not contain a complete datagram.
-      // std::cerr << "CRC error" << std::endl;
+      std::cerr << "CRC error" << std::endl;
       reading_mode_ = ReadingMode::IdentifyingDatagram;
       return Stim300Status::NORMAL;
     }
+    */
 
-    if (datagram_id_ ==
-            datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION_CRLF) or
-        datagram_id_ ==
-            datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION)) {
-      stim_300::SensorConfig sensor_config =
-          datagram_parser_.parseConfig(buffer_.cbegin());
-      Stim300Status status{Stim300Status::NORMAL};
+    if (datagram_id_ == datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION_CRLF) or datagram_id_ == datagramIdentifierToRaw(DatagramIdentifier::CONFIGURATION)) {
+      stim_300::SensorConfig sensor_config = datagram_parser_.parseConfig(buffer_.cbegin());
+      Stim300Status status{Stim300Status::NORMAL };
       if (sensor_config != sensor_config_)
         status = Stim300Status::CONFIG_CHANGED;
 
@@ -157,31 +154,45 @@ Stim300Status DriverStim300::readDataStream() {
       setDatagramFormat(sensor_config_.datagram_id);
       datagram_parser_.setDataParameters(sensor_config_);
       read_config_from_sensor_ = false;
-      // std::cout << "Parsed config datagram" << std::endl;
+      std::cout << "Parsed config datagram" << std::endl;
       reading_mode_ = ReadingMode::IdentifyingDatagram;
       return status;
     } else // Normal (measurement) datagram
     {
-      sensor_status_ =
-          datagram_parser_.parseData(buffer_.cbegin(), sensor_data_);
+      sensor_status_ = datagram_parser_.parseData(buffer_.cbegin(), sensor_data_);
       reading_mode_ = ReadingMode::IdentifyingDatagram;
 
-      if (sensor_status_ == 0)
+      if (sensor_status_ == 0){
+	std::cout << "thing1" << std::endl;
         return Stim300Status::NEW_MEASURMENT;
-      else if (sensor_status_ & (1u << 6u))
+      }
+      else if (sensor_status_ & (1u << 6u)){
+	std::cout << "thing2" << std::endl;
         return Stim300Status::STARTING_SENSOR;
-      else if (sensor_status_ & (1u << 7u))
+      }
+      else if (sensor_status_ & (1u << 7u)){
+	std::cout << "thing3" << std::endl;
         return Stim300Status::SYSTEM_INTEGRITY_ERROR;
-      else if (sensor_status_ & (1u << 5u))
+      }
+      else if (sensor_status_ & (1u << 5u)){
+	std::cout << "thing4" << std::endl;
         return Stim300Status::OUTSIDE_OPERATING_CONDITIONS;
-      else if (sensor_status_ & (1u << 4u))
+      }
+      else if (sensor_status_ & (1u << 4u)){
+	std::cout << "thing5" << std::endl;
         return Stim300Status::OVERLOAD;
-      else if (sensor_status_ & (1u << 3u))
+      }
+      else if (sensor_status_ & (1u << 3u)){
+	std::cout << "thing6" << std::endl;
         return Stim300Status::ERROR_IN_MEASUREMENT_CHANNEL;
-      else
+      }
+      else{
+	std::cout << "thing7" << std::endl;
         return Stim300Status::ERROR;
+      }
     }
   }
+  std::cout << "thing8" << std::endl;
   return Stim300Status::NORMAL;
 }
 
@@ -197,6 +208,7 @@ Stim300Status DriverStim300::update() noexcept {
     if (read_config_from_sensor_)
       askForConfigDatagram();
     mode_ = Mode::Normal;
+    return Stim300Status::NORMAL;
   case Mode::Normal:
     return readDataStream();
   case Mode::Service:
@@ -207,7 +219,7 @@ Stim300Status DriverStim300::update() noexcept {
   }
 }
 
-bool DriverStim300::setDatagramFormat(DatagramIdentifier id) {
+void DriverStim300::setDatagramFormat(DatagramIdentifier id) {
   datagram_id_ = datagramIdentifierToRaw(id);
   datagram_size_ = calculateDatagramSize(id);
   crc_dummy_bytes_ = numberOfPaddingBytes(id);
