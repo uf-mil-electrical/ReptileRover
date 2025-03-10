@@ -73,9 +73,9 @@ void responseCalibrateIMU(
 }
 
 // create publisher and server-client stuff
-void setup(std::shared_ptr<rclcpp::Node> node, rclcpp::Publisher<std_msgs::msg::String>::SharedPtr& pub){
-	pub = node->create_publisher<sensor_msgs::msg::Imu("imu/data", 10)>;
-	auto service = node->create_service<std_srvs::srv::Trigger>(
+void setup(std::shared_ptr<rclcpp::Node> node, rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr& pub, rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr& service){
+	pub = node->create_publisher<sensor_msgs::msg::Imu>("imu/data", 10);
+	service = node->create_service<std_srvs::srv::Trigger>(
 	    "imu_trigger_service", 
 	    responseCalibrateIMU
 	);
@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 {
   // ros node start
   rclcpp::init(argc, argv);
-  auto node = rclcpp::Node::make_shared("stim300_node")
+  auto node = rclcpp::Node::make_shared("stim300_node");
 
   // TODO replace with get calls
   std::string device_name = "/dev/ttyUSB0"; // CHANGE to absolute name or whatever TODO
@@ -106,7 +106,7 @@ int main(int argc, char** argv)
   node->declare_parameter<std::string>("device_name", "/dev/ttyUSB0");
   node->declare_parameter<double>("variance_gyro", 0.0001 * 2 * 4.6 * pow(10, -4));
   node->declare_parameter<double>("variance_acc", 0.000055);
-  node->declare_parameter<double>("sample_rate", 125);
+  node->declare_parameter<int>("sample_rate", 125);
   node->declare_parameter<double>("gravity", 9.80665);
 
   // These values have been estimated by having beluga in a pool for a couple of minutes, and then calculate the variance for each values
@@ -123,7 +123,7 @@ int main(int argc, char** argv)
   stim300msg.orientation.z = 0.00000024358;
   stim300msg.header.frame_id = "imu_0";
 
-  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub;
+  rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr pub;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr service;
 
   setup(node, pub, service);
@@ -139,15 +139,15 @@ int main(int argc, char** argv)
   // As loop_rate determines how often we check for new data
   // on the serial buffer, theoretically loop_rate = sample_rate
   // should be okey, but to be sure we double it
-  node.get_param("sample_rate", sample_rate);
+  node->get_parameter("sample_rate", sample_rate);
   rclcpp::Rate loop_rate(sample_rate * 2);
 
   try {
-    node.get_parameter("device_name", device_name);
+    node->get_parameter("device_name", device_name);
     SerialUnix serial_driver(device_name, stim_const::BaudRate::BAUD_921600);
     DriverStim300 driver_stim300(serial_driver);
 
-    RCLCPP_INFO("STIM300 IMU driver initialized successfully");
+    RCLCPP_INFO(node->get_logger(), "STIM300 IMU driver initialized successfully");
 
     int difference_in_dataGram{0};
     int count_messages{0};
@@ -184,14 +184,17 @@ int main(int argc, char** argv)
     // horrid loop of everything
     while (rclcpp::ok())
     {
+      RCLCPP_INFO(node->get_logger(), "b4 update");
       switch (driver_stim300.update())
       {
         case Stim300Status::NORMAL:
+          RCLCPP_INFO(node->get_logger(), "Stim 300 outside operating conditions");
           break;
         case Stim300Status::OUTSIDE_OPERATING_CONDITIONS:
-          ROS_DEBUG("Stim 300 outside operating conditions");
+          RCLCPP_INFO(node->get_logger(), "Stim 300 outside operating conditions");
           break;
         case Stim300Status::NEW_MEASURMENT:
+	      RCLCPP_INFO(node->get_logger(), "new meas");
               inclination_x = driver_stim300.getIncX();
               inclination_y = driver_stim300.getIncY();
               inclination_z = driver_stim300.getIncZ();
@@ -221,9 +224,9 @@ int main(int argc, char** argv)
                     average_calibration_pitch = atan2(-inclination_x_average,sqrt(pow(inclination_y_average,2)+pow(inclination_z_average,2)));
                     std::cout<<average_calibration_roll<<std::endl;
                     std::cout<<average_calibration_pitch<<std::endl;
-                    RCLCPP_INFO("roll: %f", average_calibration_roll);
-                    RCLCPP_INFO("pitch: %f", average_calibration_pitch);
-                    RCLCPP_INFO("IMU Calibrated");
+                    RCLCPP_INFO(node->get_logger(), "roll: %f", average_calibration_roll);
+                    RCLCPP_INFO(node->get_logger(), "pitch: %f", average_calibration_pitch);
+                    RCLCPP_INFO(node->get_logger(), "IMU Calibrated");
                     calibration_mode = false;
                 }
               break;  
@@ -237,11 +240,11 @@ int main(int argc, char** argv)
                     // Acceleration wild point filter
 
                     // Previous message
-		    node.get_param("gravity", gravity);
+		    node->get_parameter("gravity", gravity);
                     acceleration_buffer_x.push_back(driver_stim300.getAccX() * gravity);
                     acceleration_buffer_y.push_back(driver_stim300.getAccY() * gravity);
                     acceleration_buffer_z.push_back(driver_stim300.getAccZ() * gravity);
-                    stim300msg.header.stamp = ros::Time::now();
+                    stim300msg.header.stamp = node->get_clock()->now();
 
                     if (acceleration_buffer_x.size() == 2 && acceleration_buffer_y.size() == 2 && acceleration_buffer_z.size() == 2)
                     {
@@ -252,7 +255,7 @@ int main(int argc, char** argv)
                       }
                       else
                       {
-                        ROS_DEBUG("ACC_X_MSG wild point rejected");
+                        RCLCPP_DEBUG(node->get_logger(), "ACC_X_MSG wild point rejected");
                         dropped_acceleration_x_msg +=1;
                       }
 
@@ -263,7 +266,7 @@ int main(int argc, char** argv)
                       }
                       else
                       {
-                        ROS_DEBUG("ACC_Y_MSG wild point rejected");
+                        RCLCPP_DEBUG(node->get_logger(), "ACC_Y_MSG wild point rejected");
                         dropped_acceleration_y_msg +=1;
                       }
 
@@ -274,7 +277,7 @@ int main(int argc, char** argv)
                       }
                       else
                       {
-                        ROS_DEBUG("ACC_Z_MSG wild point rejected");
+                        RCLCPP_DEBUG(node->get_logger(), "ACC_Z_MSG wild point rejected");
                         dropped_acceleration_z_msg +=1;
                       }
                       // Empty acceleration buffers
@@ -284,7 +287,7 @@ int main(int argc, char** argv)
                     }
                     else
                     {
-		      node.get_param("gravity", gravity);
+		      node->get_parameter("gravity", gravity);
                       stim300msg.linear_acceleration.x = driver_stim300.getAccX() * gravity;
                       stim300msg.linear_acceleration.y = driver_stim300.getAccY() * gravity;
                       stim300msg.linear_acceleration.z = driver_stim300.getAccZ() * gravity;
@@ -305,7 +308,7 @@ int main(int argc, char** argv)
                       }
                       else
                       {
-                        ROS_DEBUG("GYRO_X_MSG wild point rejected");
+                        RCLCPP_DEBUG(node->get_logger(), "GYRO_X_MSG wild point rejected");
                         dropped_gyro_x_msg += 1;
                       }
 
@@ -316,7 +319,7 @@ int main(int argc, char** argv)
                       }
                       else
                       {
-                        ROS_DEBUG("GYRO_Y_MSG wild point rejected");
+                        RCLCPP_DEBUG(node->get_logger(), "GYRO_Y_MSG wild point rejected");
                         dropped_gyro_y_msg += 1;
                       }
 
@@ -327,7 +330,7 @@ int main(int argc, char** argv)
                       }
                       else
                       {
-                        ROS_DEBUG("GYRO_Z_MSG wild point rejected");
+                        RCLCPP_DEBUG(node->get_logger(), "GYRO_Z_MSG wild point rejected");
                         dropped_gyro_z_msg += 1;
                       }
 
@@ -346,38 +349,40 @@ int main(int argc, char** argv)
                     stim300msg.orientation.x = q.x;
                     stim300msg.orientation.y = q.y;
                     stim300msg.orientation.z = q.z;
-                    pub.publish(stim300msg);
+                    pub->publish(stim300msg);
                     break;
             }
         case Stim300Status::CONFIG_CHANGED:
-          RCLCPP_INFO("Updated Stim 300 imu config: ");
-          RCLCPP_INFO("%s", driver_stim300.printSensorConfig().c_str());
-          loop_rate = driver_stim300.getSampleRate()*2;
+          RCLCPP_INFO(node->get_logger(), "Updated Stim 300 imu config: ");
+          RCLCPP_INFO(node->get_logger(), "%s", driver_stim300.printSensorConfig().c_str());
+	  RCLCPP_ERROR(node->get_logger(), "Joseph Goodman has no idea how to update a rate in place, maybe if we stick it behind a ptr we can just del the ptr and re-assign??");
+          //loop_rate = rclcpp::Rate(driver_stim300.getSampleRate()*2);
           break;
         case Stim300Status::STARTING_SENSOR:
-          RCLCPP_INFO("Stim 300 IMU is warming up.");
+          RCLCPP_INFO(node->get_logger(), "Stim 300 IMU is warming up.");
           break;
         case Stim300Status::SYSTEM_INTEGRITY_ERROR:
-          RCLCPP_WARN("Stim 300 IMU system integrity error.");
+          RCLCPP_INFO(node->get_logger(), "Stim 300 IMU system integrity error.");
           break;
         case Stim300Status::OVERLOAD:
-          RCLCPP_WARN("Stim 300 IMU overload.");
+          RCLCPP_INFO(node->get_logger(), "Stim 300 IMU overload.");
           break;
         case Stim300Status::ERROR_IN_MEASUREMENT_CHANNEL:
-          RCLCPP_WARN("Stim 300 IMU error in measurement channel.");
+          RCLCPP_INFO(node->get_logger(), "Stim 300 IMU error in measurement channel.");
           break;
         case Stim300Status::ERROR:
-          RCLCPP_WARN("Stim 300 IMU: internal error.");
+          RCLCPP_INFO(node->get_logger(), "Stim 300 IMU: internal error.");
+	  break;
 
       }
 
       loop_rate.sleep();
-      rclcpp::spin_some();
+      rclcpp::spin_some(node);
     }
     return 0;
   } catch (std::runtime_error &error) {
     // TODO: Reset IMU
-    RCLCPP_ERROR("%s\n", error.what());
+    RCLCPP_ERROR(node->get_logger(), "%s\n", error.what());
     return 0;
   }
 }

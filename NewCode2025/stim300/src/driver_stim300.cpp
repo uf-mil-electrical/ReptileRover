@@ -80,7 +80,7 @@ Stim300Status DriverStim300::readDataStream() {
         setDatagramFormat(DatagramIdentifier::CONFIGURATION_CRLF);
       } else {
         if (++n_checked_bytes > 100) {
-          // std::cerr << "Not able to recognise datagram" << std::endl;
+          std::cerr << "Not able to recognise datagram" << std::endl;
           if (read_config_from_sensor_)
             askForConfigDatagram();
           n_checked_bytes = 0;
