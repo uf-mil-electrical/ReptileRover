@@ -106,7 +106,7 @@ int main(int argc, char** argv)
   node->declare_parameter<std::string>("device_name", "/dev/ttyUSB0");
   node->declare_parameter<double>("variance_gyro", 0.0001 * 2 * 4.6 * pow(10, -4));
   node->declare_parameter<double>("variance_acc", 0.000055);
-  node->declare_parameter<int>("sample_rate", 125);
+  node->declare_parameter<int>("sample_rate", 1000);
   node->declare_parameter<double>("gravity", 9.80665);
 
   // These values have been estimated by having beluga in a pool for a couple of minutes, and then calculate the variance for each values
@@ -140,11 +140,12 @@ int main(int argc, char** argv)
   // on the serial buffer, theoretically loop_rate = sample_rate
   // should be okey, but to be sure we double it
   node->get_parameter("sample_rate", sample_rate);
-  rclcpp::Rate* loop_rate = new rclcpp::Rate(sample_rate * 2);
+  rclcpp::Rate loop_rate = rclcpp::Rate(sample_rate * 2);
 
   try {
     node->get_parameter("device_name", device_name);
     SerialUnix serial_driver(device_name, stim_const::BaudRate::BAUD_921600);
+
     DriverStim300 driver_stim300(serial_driver);
 
     RCLCPP_INFO(node->get_logger(), "STIM300 IMU driver initialized successfully");
@@ -184,13 +185,44 @@ int main(int argc, char** argv)
     // horrid loop of everything
     while (rclcpp::ok())
     {
-      auto temp =driver_stim300.update();
+      auto temp = driver_stim300.update();
+
+      switch (temp){
+        case Stim300Status::NORMAL:
+		std::cout << "NORMAL" << std::endl;
+		//std::cout << driver_stim300.printSensorConfig().c_str() << std::endl;
+		break;
+        case Stim300Status::OUTSIDE_OPERATING_CONDITIONS:
+		std::cout << "OUTSIDE_OPERATING_CONDITIONS" << std::endl;
+		break;
+        case Stim300Status::NEW_MEASURMENT:
+		std::cout << "NEW_MEASURMENT" << std::endl;
+		break;
+        case Stim300Status::CONFIG_CHANGED:
+		std::cout << "CONFIG_CHANGED" << std::endl;
+		break;
+        case Stim300Status::STARTING_SENSOR:
+		std::cout << "STARTING_SENSOR" << std::endl;
+		break;
+        case Stim300Status::SYSTEM_INTEGRITY_ERROR:
+		std::cout << "SYSTEM_INTEGRITY_ERROR" << std::endl;
+		break;
+        case Stim300Status::OVERLOAD:
+		std::cout << "OVERLOAD" << std::endl;
+		break;
+        case Stim300Status::ERROR_IN_MEASUREMENT_CHANNEL:
+		std::cout << "ERROR_IN_MEASUREMENT_CHANNEL" << std::endl;
+		break;
+        case Stim300Status::ERROR:
+		std::cout << "ERROR" << std::endl;
+		break;
+      }
+
       switch (temp)
       {
         case Stim300Status::NORMAL:
           break;
         case Stim300Status::OUTSIDE_OPERATING_CONDITIONS:
-          RCLCPP_INFO(node->get_logger(), "Stim 300 outside operating conditions");
           break;
         case Stim300Status::NEW_MEASURMENT:
 	      RCLCPP_INFO(node->get_logger(), "new meas");
@@ -232,7 +264,7 @@ int main(int argc, char** argv)
             }
             else
             {
-                    std::cout<<"taking meas!!!"<<std::endl;
+                    //std::cout<<"taking meas!!!"<<std::endl;
                     RPY.roll = atan2(inclination_y,inclination_z);
                     RPY.pitch = atan2(-inclination_x,sqrt(pow(inclination_y,2)+pow(inclination_z,2)));
                     q = FromRPYToQuaternion(RPY);
@@ -360,9 +392,6 @@ int main(int argc, char** argv)
           RCLCPP_INFO(node->get_logger(), "Updated Stim 300 imu config: ");
           RCLCPP_INFO(node->get_logger(), "%s", driver_stim300.printSensorConfig().c_str());
 	  RCLCPP_ERROR(node->get_logger(), "Joseph Goodman has no idea how to update a rate in place, maybe if we stick it behind a ptr we can just del the ptr and re-assign??");
-	  delete loop_rate;
-	  loop_rate = nullptr;
-          loop_rate = new rclcpp::Rate(driver_stim300.getSampleRate()*2);
           break;
         case Stim300Status::STARTING_SENSOR:
           RCLCPP_INFO(node->get_logger(), "Stim 300 IMU is warming up.");
@@ -382,9 +411,10 @@ int main(int argc, char** argv)
 
       }
 
-      loop_rate->sleep();
+      loop_rate.sleep();
       rclcpp::spin_some(node);
     }
+    RCLCPP_ERROR(node->get_logger(), "ros not ok");
     return 0;
   } catch (std::runtime_error &error) {
     // TODO: Reset IMU
