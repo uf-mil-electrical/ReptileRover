@@ -159,6 +159,7 @@ int main(int argc, char** argv)
 
     double average_calibration_roll{0};
     double average_calibration_pitch{0};
+    double average_calibration_yaw{0};
     double inclination_x_calibration_sum{0};
     double inclination_y_calibration_sum{0};
     double inclination_z_calibration_sum{0};
@@ -255,10 +256,13 @@ int main(int argc, char** argv)
 
                     average_calibration_roll = atan2(inclination_y_average,inclination_z_average);
                     average_calibration_pitch = atan2(-inclination_x_average,sqrt(pow(inclination_y_average,2)+pow(inclination_z_average,2)));
+		    average_calibration_yaw = atan2(inclination_y_average, inclination_x_average);
                     std::cout<<average_calibration_roll<<std::endl;
                     std::cout<<average_calibration_pitch<<std::endl;
+                    std::cout<<average_calibration_yaw<<std::endl;
                     RCLCPP_INFO(node->get_logger(), "roll: %f", average_calibration_roll);
                     RCLCPP_INFO(node->get_logger(), "pitch: %f", average_calibration_pitch);
+                    RCLCPP_INFO(node->get_logger(), "yaw: %f", average_calibration_yaw);
                     RCLCPP_INFO(node->get_logger(), "IMU Calibrated");
                     calibration_mode = false;
                 }
@@ -269,6 +273,7 @@ int main(int argc, char** argv)
                     //std::cout<<"taking meas!!!"<<std::endl;
                     RPY.roll = atan2(inclination_y,inclination_z);
                     RPY.pitch = atan2(-inclination_x,sqrt(pow(inclination_y,2)+pow(inclination_z,2)));
+		    RPY.yaw = atan2(inclination_y, inclination_x);
                     q = FromRPYToQuaternion(RPY);
 
                     // Acceleration wild point filter
