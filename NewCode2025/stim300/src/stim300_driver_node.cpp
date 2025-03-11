@@ -187,6 +187,7 @@ int main(int argc, char** argv)
     {
       auto temp = driver_stim300.update();
 
+      /*
       switch (temp){
         case Stim300Status::NORMAL:
 		std::cout << "NORMAL" << std::endl;
@@ -217,6 +218,7 @@ int main(int argc, char** argv)
 		std::cout << "ERROR" << std::endl;
 		break;
       }
+      */
 
       switch (temp)
       {
@@ -225,7 +227,7 @@ int main(int argc, char** argv)
         case Stim300Status::OUTSIDE_OPERATING_CONDITIONS:
           break;
         case Stim300Status::NEW_MEASURMENT:
-	      RCLCPP_INFO(node->get_logger(), "new meas");
+	      //RCLCPP_INFO(node->get_logger(), "new meas");
               inclination_x = driver_stim300.getIncX();
               inclination_y = driver_stim300.getIncY();
               inclination_z = driver_stim300.getIncZ();
@@ -381,10 +383,12 @@ int main(int argc, char** argv)
                     stim300msg.orientation.x = q.x;
                     stim300msg.orientation.y = q.y;
                     stim300msg.orientation.z = q.z;
+		    /*
 		    std::cout << "q.w = "<< q.w << std::endl;
 		    std::cout << "q.x = "<< q.x << std::endl;
 		    std::cout << "q.y = "<< q.y << std::endl;
 		    std::cout << "q.z = "<< q.z << std::endl;
+		    */
                     pub->publish(stim300msg);
                     break;
             }
