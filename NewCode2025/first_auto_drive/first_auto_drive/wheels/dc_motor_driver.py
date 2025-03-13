@@ -1,7 +1,5 @@
 from first_auto_drive.wheels.PWM_chip_driver import PCA9685
-import lgpio
 
-chip = lgpio.gpiochip_open(0)
 PWM_FREQ = 50
 pwm = PCA9685(0x40, debug=False) # lowk this 0x40 number is non-negoicalble (I2C addy of PWM board)
 pwm.setPWMFreq(PWM_FREQ) # 50 MHz ??
@@ -20,7 +18,7 @@ class DCMotor:
     the PWM will determine the speed of rotation
     '''
 
-    def __init__(self, channel, gpio_one, gpio_two, debug=False):
+    def __init__(self, channel, gpio_one, gpio_two, send, debug=False):
         '''
         channel is an int from 0-15
         gpio_one and gpio_two and GPIO pins on the PI4 (use GPIO number not pin number)
@@ -31,18 +29,22 @@ class DCMotor:
         self.gpio_one = gpio_one
         self.gpio_two = gpio_two
         self.debug = debug
+        self.send = send
 
+        '''
         self.debug_msg(f"claiming {self.gpio_one}")
         lgpio.gpio_claim_output(chip, self.gpio_one)
 
         self.debug_msg(f"claiming {self.gpio_two}")
         lgpio.gpio_claim_output(chip, self.gpio_two)
+        '''
 
     def debug_msg(self, msg):
         if self.debug:
             # TODO change to ROS2 version of printing
             console.log(msg) # fukin hilarious im leaving this in because your stupid as shit joseph
 
+    '''
     def go_forward(self):
         lgpio.gpio_write(chip, self.gpio_one, 1)
         lgpio.gpio_write(chip, self.gpio_two, 0)
@@ -54,6 +56,18 @@ class DCMotor:
     def force_break(self):
         lgpio.gpio_write(chip, self.gpio_one, 0)
         lgpio.gpio_write(chip, self.gpio_two, 0)
+
+'''
+    def go_forward(self):
+        self.send([f"{self.gpio_one} 1", f"{self.gpio_two} 0"])
+
+
+    def go_backwards(self):
+        self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 1"])
+
+    def force_break(self):
+        self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 0"])
+
 
     def set_speed(self, pwm_percent):
         pwm_percent = abs(pwm_percent)

@@ -1,7 +1,7 @@
 from first_auto_drive.wheels.dc_motor_driver import DCMotor
 
 class TankDriveTrain():
-    def __init__(self):
+    def __init__(self, send):
         # which GPIO pins and PWM channels correspond to each wheel
         '''
         Legend: (channel number, gpio_one, gpio_two)
@@ -17,12 +17,12 @@ class TankDriveTrain():
             HINGES ON THIS SIDE
         '''
 
-        self.L1 = DCMotor(0, 5, 6)
-        self.L2 = DCMotor(1, 23, 24)
-        self.L3 = DCMotor(2, 12, 13)
-        self.R1 = DCMotor(3, 4, 17)
-        self.R2 = DCMotor(4, 27, 22)
-        self.R3 = DCMotor(5, 25, 16)
+        self.L1 = DCMotor(0, 5, 6, send)
+        self.L2 = DCMotor(1, 23, 24, send)
+        self.L3 = DCMotor(2, 12, 13, send)
+        self.R1 = DCMotor(3, 4, 17, send)
+        self.R2 = DCMotor(4, 27, 22, send)
+        self.R3 = DCMotor(5, 25, 16, send)
 
     def stop(self):
         self.L1.force_break()

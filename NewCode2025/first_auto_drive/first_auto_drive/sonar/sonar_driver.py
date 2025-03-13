@@ -8,7 +8,6 @@ TIME_BETWEEN_SCANS = 1.0*10**-3
 # TODO having each node make their own of this is lowk a terrible idea
 # Open the GPIO chip (usually chip 0 is used on the Raspberry Pi)
 chip = lgpio.gpiochip_open(0)
-
 # this sonar class will only send pulses once every milisecond
 class Sonar:
     def __init__(self, trigger_pin, echo_pin):
@@ -19,6 +18,12 @@ class Sonar:
         # Set the GPIO pins as an output
         lgpio.gpio_claim_output(chip, self.trigger_pin)
         lgpio.gpio_claim_input(chip, self.echo_pin)
+
+    def gpio_write(self, pin, level):
+        # is this bad TODO
+        lgpio.gpio_claim_output(chip, pin)
+        lgpio.gpio_write(chip, pin, level)
+
 
     # will always return a float, float will be -1.0 if no measurement could be made
     def single_measure(self):
