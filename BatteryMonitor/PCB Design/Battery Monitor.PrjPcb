@@ -203,7 +203,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MKYKIBTO
 
 [Document10]
-DocumentPath=gerberX2.Cam
+DocumentPath=Fab_GerberX2.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -220,7 +220,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document11]
-DocumentPath=ncdrill.Cam
+DocumentPath=Fab_NCDrill.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
