@@ -22,7 +22,7 @@ class MainNode(Node):
         # ros stuff
         super().__init__('main_node')
 
-        self.publisher = self.create_publisher(String, 'gpio/write/data', 10)
+        self.publisher = self.create_publisher(String, 'gpio/write', 10)
 
         self.subscription_1 = self.create_subscription( Joy, 'joy', self.joy_callback, 10)
         self.subscription_2 = self.create_subscription( Imu, 'imu/data', self.imu_callback, 10)
@@ -40,6 +40,7 @@ class MainNode(Node):
         for gpio_write in s:
             msg = String()
             msg.data = gpio_write
+            # self.get_logger().warn(f"publishing this msg: {gpio_write}")
             self.publisher.publish(msg)
 
     def joy_callback(self, msg):
@@ -101,6 +102,8 @@ class MainNode(Node):
         controller_being_used = not (self.joy_data[0] == 0 and self.joy_data[1] == 0)
         if controller_being_used:
             self.controller_to_motors()
+            self.get_logger().warn("cont")
+            self.tank_drive_train.stop()
             return
 
         # second, is there something in front of us
@@ -114,9 +117,11 @@ class MainNode(Node):
 
         if we_need_to_turn:
             self.imu_turn()
+            self.get_logger().warn("turn")
             return
 
         # just keep going forwards
+        self.get_logger().warn("forward")
         self.tank_drive_train.forward(0.75)
 
 def quaternion_to_euler(quaternion):

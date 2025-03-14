@@ -19,7 +19,7 @@ def generate_launch_description():
         Node(
             package='first_auto_drive',
             executable='sonar_node',
-            # output='screen'
+            output='screen'
         ),
 
         Node(
