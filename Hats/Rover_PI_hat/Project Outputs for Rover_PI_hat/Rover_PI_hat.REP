@@ -1,0 +1,217 @@
+*************************************************************
+FileName = Rover_PI_hat.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Paste
+      File : Rover_PI_hat.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Rover_PI_hat.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : Rover_PI_hat.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Rover_PI_hat.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Rover_PI_hat.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : Rover_PI_hat.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Rover_PI_hat.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Rover_PI_hat.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Rover_PI_hat.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : Rover_PI_hat.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D25
+*************************************************************
+
+*************************************************************
+Generating : M2: Outline
+      File : Rover_PI_hat.GM2
+
+    Adding Layer      : M2: Outline
+
+
+Used DCodes :
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Rover_PI_hat.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : Rover_PI_hat.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D10
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : Rover_PI_hat.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : Rover_PI_hat.GM
+
+
+Used DCodes :
+    D26
+*************************************************************
+
