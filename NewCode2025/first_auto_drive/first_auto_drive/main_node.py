@@ -64,19 +64,19 @@ class MainNode(Node):
 
         if abs(x_axis) > abs(y_axis):
             if x_axis > 0:
-                # print("turn left")
+                # self.get_logger().warn("left")
                 self.tank_drive_train.left(x_axis)
             else:
-                # print("turn right")
+                # self.get_logger().warn("right")
                 self.tank_drive_train.right(x_axis)
         else:
             # move forwards with y_axis speed
             if y_axis > 0:
-                # print("go fowards")
-                self.tank_drive_train.right(y_axis)
+                # self.get_logger().warn("forward")
+                self.tank_drive_train.forward(y_axis)
             else:
-                # print("go back")
-                self.tank_drive_train.right(y_axis)
+                # self.get_logger().warn("backward")
+                self.tank_drive_train.backward(y_axis)
 
     def imu_turn(self):
         if len(self.sonar_data) == 1:
@@ -101,27 +101,27 @@ class MainNode(Node):
         # first, should we just use controller
         controller_being_used = not (self.joy_data[0] == 0 and self.joy_data[1] == 0)
         if controller_being_used:
+            # self.get_logger().warn("cont")
             self.controller_to_motors()
-            self.get_logger().warn("cont")
-            self.tank_drive_train.stop()
             return
 
         # second, is there something in front of us
         we_need_to_turn = False
         sonar_thats_to_close = -1
         for i, reading in enumerate(self.sonar_data):
+            #self.get_logger().warn(str(reading))
             if reading <20:
-                we_need_to_turn == True
+                we_need_to_turn = True
                 sonar_thats_to_close = i
                 break
 
         if we_need_to_turn:
-            self.imu_turn()
             self.get_logger().warn("turn")
+            self.imu_turn()
             return
 
         # just keep going forwards
-        self.get_logger().warn("forward")
+        # self.get_logger().warn("forward")
         self.tank_drive_train.forward(0.75)
 
 def quaternion_to_euler(quaternion):
