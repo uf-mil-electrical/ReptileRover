@@ -37,7 +37,7 @@ class SonarNode(Node):
 
         msg = Float64MultiArray()
         msg.data = measurements
-        # print(measurements)
+        print(measurements)
         self.publisher.publish(msg)
 
 def main():

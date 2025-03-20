@@ -22,8 +22,10 @@ class JoySubscriber(Node):
             10
         )
         self.subscription
+        print("after init")
 
     def joy_callback(self, msg):
+        print("joy cb")
         # The Joy message contains axes and buttons info from the joystick
         x_axis = msg.axes[0]
         y_axis = msg.axes[1]
@@ -116,6 +118,7 @@ class JoySubscriber(Node):
                 self.R3.go_backwards()
 
 def main(args=None):
+    print("hi")
     # which GPIO pins and PWM channels correspond to each wheel
     '''
     Legend: (channel number, gpio_one, gpio_two)
@@ -138,14 +141,13 @@ def main(args=None):
     R1 = DCMotor(3, 4, 17)
     R2 = DCMotor(4, 27, 22)
     R3 = DCMotor(5, 25, 16)
+    print("hi")
 
     # ros2 stuff (setup node start node clenup node)
     rclpy.init(args=args)
     joy_subscriber = JoySubscriber(L1, L2, L3, R1, R2, R3)
     rclpy.spin(joy_subscriber)
+    print("after spin")
     joy_subscriber.destroy_node()
     rclpy.shutdown()
-
-if __name__ == '__main__':
-    main()
 

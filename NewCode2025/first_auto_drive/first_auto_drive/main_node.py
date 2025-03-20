@@ -62,6 +62,10 @@ class MainNode(Node):
         x_axis = self.joy_data[0]
         y_axis = self.joy_data[1]
 
+        # TODO del me
+        self.tank_drive_train.stop()
+        return
+
         if abs(x_axis) > abs(y_axis):
             if x_axis > 0:
                 # self.get_logger().warn("left")
@@ -110,7 +114,7 @@ class MainNode(Node):
         sonar_thats_to_close = -1
         for i, reading in enumerate(self.sonar_data):
             #self.get_logger().warn(str(reading))
-            if reading <20:
+            if reading <65:
                 we_need_to_turn = True
                 sonar_thats_to_close = i
                 break

@@ -61,14 +61,16 @@ class Sonar:
         start_of_func = datetime.datetime.now()
         while lgpio.gpio_read(chip, self.echo_pin) == 0:
             time_spend_waiting = datetime.datetime.now() - start_of_func
-            if time_spend_waiting.total_seconds() > 10**-3:
+            if time_spend_waiting.total_seconds() > 3*10**-3:
+                print('one')
                 return -1.0
 
         before = datetime.datetime.now()
 
         while lgpio.gpio_read(chip, self.echo_pin) == 1:
             time_spend_waiting = datetime.datetime.now() - start_of_func
-            if time_spend_waiting.total_seconds() > 10**-3:
+            if time_spend_waiting.total_seconds() > 10*10**-3:
+                print("two")
                 return -1.0
 
         after = datetime.datetime.now()
