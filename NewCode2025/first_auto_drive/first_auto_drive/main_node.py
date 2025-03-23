@@ -35,6 +35,7 @@ class MainNode(Node):
 
         # motors for later
         self.tank_drive_train = TankDriveTrain(lambda s: self.forward_gpio(s))
+        self.turning_rn = False
 
     def forward_gpio(self, s):
         for gpio_write in s:
@@ -83,8 +84,10 @@ class MainNode(Node):
                 self.tank_drive_train.backward(y_axis)
 
     def imu_turn(self):
+        self.turning_rn = True
+        '''
         if len(self.sonar_data) == 1:
-            self.tank_drive_train.left(0.5)
+            #self.tank_drive_train.left(0.5)
 
         elif len(self.sonar_data) == 2:
             # if 2 smaller turn left
@@ -94,14 +97,27 @@ class MainNode(Node):
                 self.tank_drive_train.right(0.5)
         else:
             print("bad things")
+            '''
 
         start_angle = self.imu_data
         end_angle = self.imu_data
-        while abs(start_angle - end_angle) < 90:
+        while abs(end_angle- start_angle) < 90:
+            self.get_logger().warn("b4s")
             rclpy.spin_once(self)
+            self.get_logger().warn("after spin")
             end_angle = self.imu_data
 
+            self.get_logger().warn("=========================")
+            self.get_logger().warn(str(end_angle))
+            self.get_logger().warn(str(abs(end_angle-start_angle)))
+            self.get_logger().warn("=========================")
+        self.turning_rn = False
+
     def timer_callback(self):
+        if self.turning_rn:
+            return
+
+        self.get_logger().warn("entering")
         # first, should we just use controller
         controller_being_used = not (self.joy_data[0] == 0 and self.joy_data[1] == 0)
         if controller_being_used:
@@ -114,7 +130,7 @@ class MainNode(Node):
         sonar_thats_to_close = -1
         for i, reading in enumerate(self.sonar_data):
             #self.get_logger().warn(str(reading))
-            if reading <65:
+            if reading <65 and reading != -1.0:
                 we_need_to_turn = True
                 sonar_thats_to_close = i
                 break
@@ -126,7 +142,8 @@ class MainNode(Node):
 
         # just keep going forwards
         # self.get_logger().warn("forward")
-        self.tank_drive_train.forward(0.75)
+        self.tank_drive_train.stop()
+        # self.tank_drive_train.forward(0.75)
 
 def quaternion_to_euler(quaternion):
     # Convert quaternion to Euler angles (roll, pitch, yaw) in radians
