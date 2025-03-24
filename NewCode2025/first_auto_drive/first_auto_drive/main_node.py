@@ -35,7 +35,10 @@ class MainNode(Node):
 
         # motors for later
         self.tank_drive_train = TankDriveTrain(lambda s: self.forward_gpio(s))
+
+        # state ish vars
         self.turning_rn = False
+        self.start_angle = -1
 
     def forward_gpio(self, s):
         for gpio_write in s:
@@ -83,11 +86,10 @@ class MainNode(Node):
                 # self.get_logger().warn("backward")
                 self.tank_drive_train.backward(y_axis)
 
+    '''
     def imu_turn(self):
-        self.turning_rn = True
-        '''
         if len(self.sonar_data) == 1:
-            #self.tank_drive_train.left(0.5)
+            self.tank_drive_train.left(0.5)
 
         elif len(self.sonar_data) == 2:
             # if 2 smaller turn left
@@ -97,7 +99,6 @@ class MainNode(Node):
                 self.tank_drive_train.right(0.5)
         else:
             print("bad things")
-            '''
 
         start_angle = self.imu_data
         end_angle = self.imu_data
@@ -111,12 +112,9 @@ class MainNode(Node):
             self.get_logger().warn(str(end_angle))
             self.get_logger().warn(str(abs(end_angle-start_angle)))
             self.get_logger().warn("=========================")
-        self.turning_rn = False
+    '''
 
     def timer_callback(self):
-        if self.turning_rn:
-            return
-
         self.get_logger().warn("entering")
         # first, should we just use controller
         controller_being_used = not (self.joy_data[0] == 0 and self.joy_data[1] == 0)
@@ -125,20 +123,22 @@ class MainNode(Node):
             self.controller_to_motors()
             return
 
-        # second, is there something in front of us
-        we_need_to_turn = False
-        sonar_thats_to_close = -1
-        for i, reading in enumerate(self.sonar_data):
-            #self.get_logger().warn(str(reading))
-            if reading <65 and reading != -1.0:
-                we_need_to_turn = True
-                sonar_thats_to_close = i
-                break
-
-        if we_need_to_turn:
-            self.get_logger().warn("turn")
-            self.imu_turn()
+        # second, are we turning?
+        # if so, just keep track of delta angle
+        delta_angle = abs(self.start_angle - self.imu_data)
+        if self.turning_rn and delta_angle > 90:
+            self.turning_rn = False
             return
+
+        # final check, is there something in front of us
+        sonar_thats_too_close = -1 # could use this to determine which sonar is firing
+        if not self.turning_rn:
+            for i, reading in enumerate(self.sonar_data):
+                #self.get_logger().warn(str(reading))
+                if reading <65 and reading != -1.0:
+                    self.tank_drive_train.left(0.5)
+                    self.start_angle = self.imu_data
+                    return
 
         # just keep going forwards
         # self.get_logger().warn("forward")
