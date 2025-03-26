@@ -6,6 +6,8 @@
 # 2. if the sonar says 20cm or less, start_turn
 # 3. start_turn uses the imu to turn 90 degress and then we go back to step 1
 
+import sys
+
 import rclpy
 import math
 from rclpy.node import Node
@@ -59,6 +61,7 @@ class MainNode(Node):
     def imu_callback(self, msg):
         ori = msg.orientation
         roll, pitch, yaw = quaternion_to_euler(ori)
+        self.get_logger().warn(str(roll))
         self.imu_data = roll
         
 
@@ -68,6 +71,7 @@ class MainNode(Node):
 
         # TODO del me
         self.tank_drive_train.stop()
+        sys.exit(1)
         return
 
         if abs(x_axis) > abs(y_axis):
@@ -115,11 +119,10 @@ class MainNode(Node):
     '''
 
     def timer_callback(self):
-        self.get_logger().warn("entering")
         # first, should we just use controller
         controller_being_used = not (self.joy_data[0] == 0 and self.joy_data[1] == 0)
         if controller_being_used:
-            # self.get_logger().warn("cont")
+            self.get_logger().warn("cont")
             self.controller_to_motors()
             return
 
@@ -128,22 +131,25 @@ class MainNode(Node):
         delta_angle = abs(self.start_angle - self.imu_data)
         if self.turning_rn and delta_angle > 90:
             self.turning_rn = False
+            self.get_logger().warn("leaving turn")
             return
 
         # final check, is there something in front of us
         sonar_thats_too_close = -1 # could use this to determine which sonar is firing
         if not self.turning_rn:
             for i, reading in enumerate(self.sonar_data):
-                #self.get_logger().warn(str(reading))
+                # self.get_logger().warn(str(reading))
                 if reading <65 and reading != -1.0:
-                    self.tank_drive_train.left(0.5)
+                    # self.tank_drive_train.left(0.5)
+                    self.get_logger().warn("starting turn")
+                    self.turning_rn = True
                     self.start_angle = self.imu_data
                     return
 
         # just keep going forwards
         # self.get_logger().warn("forward")
         self.tank_drive_train.stop()
-        # self.tank_drive_train.forward(0.75)
+        # self.tank_drive_train.forward(0.50)
 
 def quaternion_to_euler(quaternion):
     # Convert quaternion to Euler angles (roll, pitch, yaw) in radians
