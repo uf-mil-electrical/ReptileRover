@@ -4,6 +4,8 @@ from std_msgs.msg import Float64MultiArray, String
 from first_auto_drive.sonar.sonar_driver import Sonar
 import time
 
+from collections import deque
+
 class SonarNode(Node):
     def __init__(self):
         super().__init__('sonar_node')
@@ -18,6 +20,10 @@ class SonarNode(Node):
             Sonar(20, 21),
         ]
 
+        self.readings = []
+        for sonar in self.sonars:
+            self.readings.append(deque(maxlen=12))
+
     def gpio_write_callback(self, msg):
         msg = msg.data
         msg = msg.split()
@@ -25,19 +31,34 @@ class SonarNode(Node):
         level = int(msg[1])
         self.sonars[0].gpio_write(pin, level)
 
+    def avg(self, measurements):
+        for i, meas in enumerate(measurements):
+            if meas == -1:
+                continue
+            self.readings[i].append(meas)
+
+        avg = []
+        for reading in self.readings:
+            if len(reading) == 0:
+                avg.append(-1)
+                continue
+
+            avg.append(sum(reading)/len(reading))
+            return avg
+
     def timer_cb(self):
         measurements = []
 
         for sonar in self.sonars:
-            meas = sonar.single_measure()
-            if meas == -1:
-                continue
+            meas = sonar.single_measure() # could be -1 on bad read
             measurements.append(meas)
             # time.sleep(2 * 10**-3) # delay to help w noise NOT need when only one sonar
 
+        avg_measurements = self.avg(measurements)
+
         msg = Float64MultiArray()
-        msg.data = measurements
-        print(measurements)
+        msg.data = avg_measurements
+        print(avg_measurements)
         self.publisher.publish(msg)
 
 def main():
