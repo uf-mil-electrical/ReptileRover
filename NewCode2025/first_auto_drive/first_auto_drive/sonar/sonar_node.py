@@ -9,7 +9,7 @@ class SonarNode(Node):
         super().__init__('sonar_node')
         self.publisher = self.create_publisher(Float64MultiArray, 'sonar/data', 10)
 
-        self.subscription = self.create_subscription(String, "gpio/write", self.gpio_write_callback, 10)
+        self.subscription = self.create_subscription(String, "gpio/write", self.gpio_write_callback, 20)
 
         self.timer = self.create_timer(0.01, self.timer_cb)
 

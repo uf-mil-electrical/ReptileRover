@@ -7,6 +7,7 @@
 # 3. start_turn uses the imu to turn 90 degress and then we go back to step 1
 
 import sys
+import datetime
 
 import rclpy
 import math
@@ -24,7 +25,7 @@ class MainNode(Node):
         # ros stuff
         super().__init__('main_node')
 
-        self.publisher = self.create_publisher(String, 'gpio/write', 10)
+        self.publisher = self.create_publisher(String, 'gpio/write', 20)
 
         self.subscription_1 = self.create_subscription( Joy, 'joy', self.joy_callback, 10)
         self.subscription_2 = self.create_subscription( Imu, 'imu/data', self.imu_callback, 10)
@@ -33,14 +34,15 @@ class MainNode(Node):
         self.subscription_2
         self.subscription_3
 
-        self.timer = self.create_timer(0.1, self.timer_callback)
+        self.timer = self.create_timer(0.005, self.timer_callback)
 
         # motors for later
         self.tank_drive_train = TankDriveTrain(lambda s: self.forward_gpio(s))
 
         # state ish vars
         self.turning_rn = False
-        self.start_angle = -1
+        self.turn_started = datetime.datetime.now()
+        self.start_angle = -1 # not used :(
 
     def forward_gpio(self, s):
         for gpio_write in s:
@@ -61,7 +63,7 @@ class MainNode(Node):
     def imu_callback(self, msg):
         ori = msg.orientation
         roll, pitch, yaw = quaternion_to_euler(ori)
-        self.get_logger().warn(str(roll))
+        # self.get_logger().warn(str(roll))
         self.imu_data = roll
         
 
@@ -70,9 +72,12 @@ class MainNode(Node):
         y_axis = self.joy_data[1]
 
         # TODO del me
-        self.tank_drive_train.stop()
-        sys.exit(1)
-        return
+        '''
+        if abs(x_axis) == 1 or abs(y_axis) == 1:
+            self.tank_drive_train.stop()
+            sys.exit(1)
+            return
+        '''
 
         if abs(x_axis) > abs(y_axis):
             if x_axis > 0:
@@ -122,28 +127,31 @@ class MainNode(Node):
         # first, should we just use controller
         controller_being_used = not (self.joy_data[0] == 0 and self.joy_data[1] == 0)
         if controller_being_used:
-            self.get_logger().warn("cont")
+            # self.get_logger().warn("cont")
             self.controller_to_motors()
             return
 
         # second, are we turning?
         # if so, just keep track of delta angle
-        delta_angle = abs(self.start_angle - self.imu_data)
-        if self.turning_rn and delta_angle > 90:
-            self.turning_rn = False
-            self.get_logger().warn("leaving turn")
+        # delta_angle = abs(self.start_angle - self.imu_data)
+        if self.turning_rn:
+            time_spent_turning = (datetime.datetime.now() - self.turn_started).total_seconds()
+            if time_spent_turning > 1:
+                self.turning_rn = False
+                # self.get_logger().warn("leaving turn")
             return
 
         # final check, is there something in front of us
         sonar_thats_too_close = -1 # could use this to determine which sonar is firing
         if not self.turning_rn:
             for i, reading in enumerate(self.sonar_data):
-                # self.get_logger().warn(str(reading))
-                if reading <65 and reading != -1.0:
-                    # self.tank_drive_train.left(0.5)
-                    self.get_logger().warn("starting turn")
+                self.get_logger().warn(str(reading))
+                if reading>16 and reading <65 and reading != -1.0:
+                    self.tank_drive_train.left(0.4)
+
                     self.turning_rn = True
                     self.start_angle = self.imu_data
+                    self.turn_started = datetime.datetime.now()
                     return
 
         # just keep going forwards
