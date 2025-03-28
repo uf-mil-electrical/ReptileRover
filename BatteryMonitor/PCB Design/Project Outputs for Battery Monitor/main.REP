@@ -84,10 +84,10 @@ Generating : PWR Layer
 
 
 Used DCodes :
-    D41
     D42
     D43
     D44
+    D45
     D46
     D47
     D48
@@ -126,7 +126,8 @@ Generating : GND Layer
 
 Used DCodes :
     D41
-    D43
+    D42
+    D44
     D46
     D47
     D48
@@ -166,8 +167,8 @@ Generating : Bottom Layer
 Used DCodes :
     D10
     D40
-    D41
     D42
+    D43
     D46
     D47
     D48
