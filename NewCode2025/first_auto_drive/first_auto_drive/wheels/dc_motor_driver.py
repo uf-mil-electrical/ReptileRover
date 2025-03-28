@@ -59,14 +59,17 @@ class DCMotor:
 
 '''
     def go_forward(self):
-        self.send([f"{self.gpio_one} 1", f"{self.gpio_two} 0"])
+        # self.send([f"{self.gpio_one} 1", f"{self.gpio_two} 0"])
+        return f"{self.gpio_one} 1", f"{self.gpio_two} 0"
 
 
     def go_backwards(self):
-        self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 1"])
+        # self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 1"])
+        return f"{self.gpio_one} 0", f"{self.gpio_two} 1"
 
     def force_break(self):
-        self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 0"])
+        # self.send([f"{self.gpio_one} 0", f"{self.gpio_two} 0"])
+        return f"{self.gpio_one} 0", f"{self.gpio_two} 0"
 
 
     def set_speed(self, pwm_percent):

@@ -24,12 +24,15 @@ class SonarNode(Node):
         for sonar in self.sonars:
             self.readings.append(deque(maxlen=12))
 
-    def gpio_write_callback(self, msg):
-        msg = msg.data
-        msg = msg.split()
-        pin = int(msg[0])
-        level = int(msg[1])
-        self.sonars[0].gpio_write(pin, level)
+    def gpio_write_callback(self, msgs):
+        for msg in msgs.data.split('\n'):
+            if len(msg) == 0:
+                continue
+
+            msg = msg.split()
+            pin = int(msg[0])
+            level = int(msg[1])
+            self.sonars[0].gpio_write(pin, level)
 
     def avg(self, measurements):
         for i, meas in enumerate(measurements):

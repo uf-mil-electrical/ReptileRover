@@ -45,11 +45,10 @@ class MainNode(Node):
         self.start_angle = -1 # not used :(
 
     def forward_gpio(self, s):
-        for gpio_write in s:
-            msg = String()
-            msg.data = gpio_write
-            # self.get_logger().warn(f"publishing this msg: {gpio_write}")
-            self.publisher.publish(msg)
+        msg = String()
+        msg.data = s
+        # self.get_logger().warn(f"publishing this msg: {s}")
+        self.publisher.publish(msg)
 
     def joy_callback(self, msg):
         # The Joy message contains axes and buttons info from the joystick
@@ -145,7 +144,7 @@ class MainNode(Node):
         sonar_thats_too_close = -1 # could use this to determine which sonar is firing
         if not self.turning_rn:
             for i, reading in enumerate(self.sonar_data):
-                self.get_logger().warn(str(reading))
+                # self.get_logger().warn(str(reading))
                 if reading>16 and reading <65 and reading != -1.0:
                     self.tank_drive_train.left(0.4)
 
@@ -156,8 +155,8 @@ class MainNode(Node):
 
         # just keep going forwards
         # self.get_logger().warn("forward")
-        self.tank_drive_train.stop()
-        # self.tank_drive_train.forward(0.50)
+        # self.tank_drive_train.stop()
+        self.tank_drive_train.forward(0.4)
 
 def quaternion_to_euler(quaternion):
     # Convert quaternion to Euler angles (roll, pitch, yaw) in radians
