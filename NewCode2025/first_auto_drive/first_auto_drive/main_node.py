@@ -67,7 +67,7 @@ class MainNode(Node):
         
 
     def controller_to_motors(self):
-        x_axis = self.joy_data[0]
+        x_axis = self.joy_data[3]
         y_axis = self.joy_data[1]
 
         # TODO del me
@@ -94,7 +94,7 @@ class MainNode(Node):
         #         # self.get_logger().warn("backward")
         #         self.tank_drive_train.backward(y_axis)
 
-        self.tank_drive_train.arcade(x_axis, y_axis)
+        self.tank_drive_train.arcade(y_axis, x_axis)
     '''
     def imu_turn(self):
         if len(self.sonar_data) == 1:
