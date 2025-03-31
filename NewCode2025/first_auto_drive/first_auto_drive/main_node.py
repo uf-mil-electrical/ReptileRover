@@ -52,7 +52,7 @@ class MainNode(Node):
 
     def joy_callback(self, msg):
         # The Joy message contains axes and buttons info from the joystick
-        self.joy_data[0] = msg.axes[0]
+        self.joy_data[0] = msg.axes[3]
         self.joy_data[1] = msg.axes[1]
 
     def sonar_callback(self, msg):
@@ -67,7 +67,7 @@ class MainNode(Node):
         
 
     def controller_to_motors(self):
-        x_axis = self.joy_data[3]
+        x_axis = self.joy_data[0]
         y_axis = self.joy_data[1]
 
         # TODO del me
