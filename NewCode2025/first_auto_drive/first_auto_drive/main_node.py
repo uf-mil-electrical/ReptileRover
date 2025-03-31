@@ -94,7 +94,7 @@ class MainNode(Node):
         #         # self.get_logger().warn("backward")
         #         self.tank_drive_train.backward(y_axis)
 
-        self.tank_drive_train.arcade(y_axis, x_axis)
+        self.tank_drive_train.arcade(y_axis, -x_axis)
     '''
     def imu_turn(self):
         if len(self.sonar_data) == 1:
@@ -147,7 +147,7 @@ class MainNode(Node):
             for i, reading in enumerate(self.sonar_data):
                 # self.get_logger().warn(str(reading))
                 if reading>16 and reading <65 and reading != -1.0:
-                    self.tank_drive_train.left(0.4)
+                    # self.tank_drive_train.left(0.4)
 
                     self.turning_rn = True
                     self.start_angle = self.imu_data
