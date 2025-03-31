@@ -82,7 +82,10 @@ class DCMotor:
         pwm.set_pwm_percent(self.channel, pwm_percent)
 
     def set_speed_direction(self, pwm_percent):
-        assert abs(pwm_percent) <= 1.0, "pwm magnitude greater than 1"
+        if pwm_percent > 1.0:
+            pwm_percent = 1.0
+        elif pwm_percent < -1.0:
+            pwm_percent = -1.0
 
         pwm.set_pwm_percent(self.channel, abs(pwm_percent))
 
