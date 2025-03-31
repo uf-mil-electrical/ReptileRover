@@ -76,24 +76,25 @@ class MainNode(Node):
             self.tank_drive_train.stop()
             sys.exit(1)
             return
-        '''
+        # '''
 
-        if abs(x_axis) > abs(y_axis):
-            if x_axis > 0:
-                # self.get_logger().warn("left")
-                self.tank_drive_train.left(x_axis)
-            else:
-                # self.get_logger().warn("right")
-                self.tank_drive_train.right(x_axis)
-        else:
-            # move forwards with y_axis speed
-            if y_axis > 0:
-                # self.get_logger().warn("forward")
-                self.tank_drive_train.forward(y_axis)
-            else:
-                # self.get_logger().warn("backward")
-                self.tank_drive_train.backward(y_axis)
+        # if abs(x_axis) > abs(y_axis):
+        #     if x_axis > 0:
+        #         # self.get_logger().warn("left")
+        #         self.tank_drive_train.left(x_axis)
+        #     else:
+        #         # self.get_logger().warn("right")
+        #         self.tank_drive_train.right(x_axis)
+        # else:
+        #     # move forwards with y_axis speed
+        #     if y_axis > 0:
+        #         # self.get_logger().warn("forward")
+        #         self.tank_drive_train.forward(y_axis)
+        #     else:
+        #         # self.get_logger().warn("backward")
+        #         self.tank_drive_train.backward(y_axis)
 
+        self.tank_drive_train.arcade(x_axis, y_axis)
     '''
     def imu_turn(self):
         if len(self.sonar_data) == 1:
