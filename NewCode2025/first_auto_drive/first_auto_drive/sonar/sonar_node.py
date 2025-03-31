@@ -47,7 +47,7 @@ class SonarNode(Node):
                 continue
 
             avg.append(sum(reading)/len(reading))
-            return avg
+        return avg
 
     def timer_cb(self):
         measurements = []
