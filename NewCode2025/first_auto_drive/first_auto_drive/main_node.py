@@ -156,8 +156,8 @@ class MainNode(Node):
 
         # just keep going forwards
         # self.get_logger().warn("forward")
-        # self.tank_drive_train.stop()
-        self.tank_drive_train.forward(0.4)
+        self.tank_drive_train.stop()
+        # self.tank_drive_train.forward(0.4)
 
 def quaternion_to_euler(quaternion):
     # Convert quaternion to Euler angles (roll, pitch, yaw) in radians
