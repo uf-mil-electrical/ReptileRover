@@ -4,7 +4,7 @@ import adafruit_gps
 
 # Set up the serial connection (Update with your port)
 # use next line when on linux
-uart = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=10)
+uart = serial.Serial("/dev/ttyUSB1", baudrate=9600, timeout=10)
 # use next line when on windows replacing COM with the correct port
 # COM = "COM5"
 # uart = serial.Serial(COM, baudrate=9600, timeout=10)
