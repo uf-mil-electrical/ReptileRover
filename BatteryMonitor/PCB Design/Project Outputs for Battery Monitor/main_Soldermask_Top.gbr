@@ -2,7 +2,7 @@
 G04 Layer_Color=8388736*
 %FSLAX43Y43*%
 %MOMM*%
-%TF.SameCoordinates,F5CB7E66-454E-439B-8716-0DC7987F3294*%
+%TF.SameCoordinates,6D6D3FC4-1071-40F2-90B5-7F3D85A4C3A5*%
 %TF.FilePolarity,Negative*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.Part,Single*%
@@ -1824,5 +1824,5 @@ X31300D02*
 D03*
 X21140D02*
 D03*
-%TF.MD5,d73f2508eccde1bce84d0151e2d881fd*%
+%TF.MD5,be0c5890a6ef3fc2518419dc73ac736a*%
 M02*
