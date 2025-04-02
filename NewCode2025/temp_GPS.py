@@ -1,8 +1,6 @@
 import time
 import serial
 import adafruit_gps
-import roslibpy
-
 
 # Set up the serial connection (Update with your port)
 # use next line when on linux
