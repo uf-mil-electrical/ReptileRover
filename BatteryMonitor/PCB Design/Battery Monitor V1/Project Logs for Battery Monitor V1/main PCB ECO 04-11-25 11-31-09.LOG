@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=C4 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=R4 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R7 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change component parameters: Designator = "C4" ("C4"); Footprint = "[Cap] SMD 1210"; UniqueID = "\HHEAAMHU" ("\HHEAAMHU")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "[Res] SMD 1210"; UniqueID = "\HPXBFSUA" ("\HPXBFSUA")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "[Res] SMD 1210"; UniqueID = "\OPTKTCSD" ("\OPTKTCSD")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"

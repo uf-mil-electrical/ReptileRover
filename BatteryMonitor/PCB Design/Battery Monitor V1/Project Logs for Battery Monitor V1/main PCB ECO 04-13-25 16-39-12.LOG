@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=X? NewDesignator=X2
+Change Net Name : Old Net Name=+5V New Net Name=LM2576_FEEDBACK
+Change Net Name : Old Net Name=GND New Net Name=LX1
+Change Net Name : Old Net Name=USBVCC - Raw New Net Name=NetF1_1
+Change Net Color : Old Net Color=RGB(118, 165, 175) New Net Color=RGB(118, 165, 175)
+Added Member To Class: ClassName=Primary MCU Member=Component X1 [Port] USB Type-B Female (Thru-Hole)
+Added Member To Class: ClassName=Battery Monitoring Member=Component X4 1996236

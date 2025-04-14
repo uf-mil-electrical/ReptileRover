@@ -1,0 +1,64 @@
+Removed Member From Class: ClassName=Primary MCU Member=C14
+Removed Member From Class: ClassName=Primary MCU Member=C16
+Removed Member From Class: ClassName=Primary MCU Member=C19
+Removed Member From Class: ClassName=Primary MCU Member=C21
+Removed Member From Class: ClassName=Primary MCU Member=C22
+Removed Member From Class: ClassName=Primary MCU Member=C23
+Change Component Designator: OldDesignator=C9 NewDesignator=C11
+Change Component Designator: OldDesignator=C10 NewDesignator=C3
+Change Component Designator: OldDesignator=C11 NewDesignator=C8
+Change Component Designator: OldDesignator=C14 NewDesignator=C10
+Change Component Designator: OldDesignator=C16 NewDesignator=C1
+Change Component Designator: OldDesignator=C19 NewDesignator=C2
+Change Component Designator: OldDesignator=C20 NewDesignator=C6
+Change Component Designator: OldDesignator=C21 NewDesignator=C7
+Change Component Designator: OldDesignator=C22 NewDesignator=C4
+Change Component Designator: OldDesignator=C23 NewDesignator=C9
+Change Component Designator: OldDesignator=C24 NewDesignator=C?
+Change Component Designator: OldDesignator=C25 NewDesignator=C?
+Change Component Designator: OldDesignator=C26 NewDesignator=C?
+Change Component Designator: OldDesignator=C27 NewDesignator=C?
+Change Component Designator: OldDesignator=C28 NewDesignator=C?
+Change Component Designator: OldDesignator=D3 NewDesignator=D?
+Change Component Designator: OldDesignator=D4 NewDesignator=D?
+Change Component Designator: OldDesignator=F2 NewDesignator=F?
+Change Component Designator: OldDesignator=F3 NewDesignator=F?
+Change Component Designator: OldDesignator=L4 NewDesignator=L?
+Change Component Designator: OldDesignator=R16 NewDesignator=R?
+Change Component Designator: OldDesignator=R17 NewDesignator=R?
+Change Component Designator: OldDesignator=SEG1 NewDesignator=SEG?
+Change Component Designator: OldDesignator=SR1 NewDesignator=SR?
+Change Component Designator: OldDesignator=T1 NewDesignator=T?
+Change Component Designator: OldDesignator=T2 NewDesignator=T?
+Change Component Designator: OldDesignator=U5 NewDesignator=U?
+Change Component Designator: OldDesignator=U6 NewDesignator=U?
+Change Component Designator: OldDesignator=U7 NewDesignator=U?
+Change Component Designator: OldDesignator=X3 NewDesignator=X?
+Change Component Designator: OldDesignator=X4 NewDesignator=X?
+Change Net Color : Old Net Color=RGB(118, 165, 175) New Net Color=RGB(118, 165, 175)
+Added Member To Class: ClassName=Primary MCU Member=Component C1 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C2 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C3 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C4 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C7 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C8 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Seven-Seg Displays Member=Component SEG? [7seg] 4-Digit
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
+Added Rule: Name=Schematic Supply Nets_6
+Added Rule: Name=Schematic Supply Nets_7
+Added Rule: Name=Schematic Supply Nets_8
+Added Rule: Name=Schematic Supply Nets_9
+Added Rule: Name=Schematic Supply Nets_10
+Added Rule: Name=Schematic Supply Nets_11
+Added Rule: Name=Schematic Supply Nets_12
+Added Rule: Name=Schematic Supply Nets_13
+Added Rule: Name=Schematic Supply Nets_14
+Added Rule: Name=Schematic Supply Nets_15
+Added Rule: Name=Schematic Supply Nets_16
+Added Rule: Name=Schematic Supply Nets_17
+Added Rule: Name=Schematic Supply Nets_18

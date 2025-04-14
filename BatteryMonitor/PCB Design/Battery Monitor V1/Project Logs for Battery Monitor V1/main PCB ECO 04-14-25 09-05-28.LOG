@@ -1,0 +1,43 @@
+Removed Member From Class: ClassName=Battery Monitoring Member=C2
+Removed Member From Class: ClassName=Battery Monitoring Member=C17
+Removed Member From Class: ClassName=Battery Monitoring Member=C22
+Removed Member From Class: ClassName=Seven-Seg Displays Member=R7
+Removed Member From Class: ClassName=Battery Monitoring Member=R9
+Removed Member From Class: ClassName=Battery Monitoring Member=U4
+Change Component Designator: OldDesignator=D1 NewDesignator=D5
+Change Component Designator: OldDesignator=D2 NewDesignator=D1
+Change Component Designator: OldDesignator=D3 NewDesignator=D6
+Change Component Designator: OldDesignator=D4 NewDesignator=D7
+Change Component Designator: OldDesignator=D5 NewDesignator=D2
+Change Component Designator: OldDesignator=D6 NewDesignator=D3
+Change Component Designator: OldDesignator=D7 NewDesignator=D4
+Change Net Name : Old Net Name=NetD2_1 New Net Name=NetD1_1
+Change Net Name : Old Net Name=NetD5_1 New Net Name=NetD2_1
+Change Net Name : Old Net Name=NetD6_1 New Net Name=NetD3_1
+Change Net Name : Old Net Name=NetD7_1 New Net Name=NetD4_1
+Added Member To Class: ClassName=Primary MCU Member=Component C1 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C2 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C3 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C4 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C6 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C7 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C9 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C11 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C13 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C19 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C20 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C21 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component F3 Thru-Hole
+Added Member To Class: ClassName=Primary MCU Member=Component R1 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R2 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R3 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R4 [Res] SMD Resistor
+Added Member To Class: ClassName=Battery Monitoring Member=Component R5 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R6 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R8 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R10 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R12 [Res] SMD Resistor
+Added Member To Class: ClassName=Seven-Seg Displays Member=Component R14 [Res] SMD Resistor
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component T2 4pin Screw Terminal
+Added Member To Class: ClassName=Battery Monitoring Member=Component U3 LTC2959
+Added Member To Class: ClassName=Primary MCU Member=Component U4 RT6150B-33GQW

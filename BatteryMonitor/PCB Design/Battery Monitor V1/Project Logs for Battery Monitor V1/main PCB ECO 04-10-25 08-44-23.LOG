@@ -1,0 +1,687 @@
+Added Component: Designator=C1([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C2([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "47uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C3([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "47uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C4([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C5([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C6([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C7([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "15pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C8([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "15pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C9([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C10([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C11([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C12([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C13([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C14([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C15([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C16([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C17([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C18([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C19([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C20([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C21([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C22([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C23([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C24([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C25([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "0.47uF (470nF)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C26([Cap] SMD 1210)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=C27([Cap] SMD Polarized, 4mm)
+Add component (AddParameter): Name = "Capacitance"; Value = "100uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C28([Cap] Thru-Hole Polarized 5mm)
+Add component (AddParameter): Name = "Capacitance"; Value = "1000uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Spacing"; Value = "5mm"; VariantName = "[No Variations]"
+Added Component: Designator=D1([Diode] SMD SOD-123W)
+Add component (AddParameter): Name = "Size Package"; Value = "SOD-123W"; VariantName = "[No Variations]"
+Added Component: Designator=D2([LED] Thru-Hole, 3mm, Green)
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Added Component: Designator=D3([Diode] SMD M7)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "M7"; VariantName = "[No Variations]"
+Added Component: Designator=D4([Diode] Thru-Hole Schottky)
+Add component (AddParameter): Name = "Mouser Part #"; Value = "511-1N5822"; VariantName = "[No Variations]"
+Added Component: Designator=F1([PTC] 500mA Trip)
+Add component (AddParameter): Name = "JLC Part #"; Value = "C17313"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1812"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Trip Current"; Value = "500mA"; VariantName = "[No Variations]"
+Added Component: Designator=F2([Fuse] Blade (2))
+Add component (AddParameter): Name = "Capacity"; Value = "20A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F3([Fuse] Blade (2))
+Add component (AddParameter): Name = "Capacity"; Value = "20A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J1([Jumper] Solderable Jumper)
+Add component (AddParameter): Name = "NO/NC"; Value = "NO"; VariantName = "[No Variations]"
+Added Component: Designator=J2([Jumper] Solderable Jumper)
+Add component (AddParameter): Name = "NO/NC"; Value = "NO"; VariantName = "[No Variations]"
+Added Component: Designator=J3([Jumper] Solderable Jumper)
+Add component (AddParameter): Name = "NO/NC"; Value = "NC"; VariantName = "[No Variations]"
+Added Component: Designator=J4([Jumper] Solderable Jumper)
+Add component (AddParameter): Name = "NO/NC"; Value = "NO"; VariantName = "[No Variations]"
+Added Component: Designator=L1([Inductor] SMD 0603)
+Add component (AddParameter): Name = "Inductance"; Value = "2.2uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0603"; VariantName = "[No Variations]"
+Added Component: Designator=L2([Inductor] SMD 0603)
+Add component (AddParameter): Name = "Inductance"; Value = "10uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0603"; VariantName = "[No Variations]"
+Added Component: Designator=L3([Ferrite] SMD Bead 0805 (1))
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Res @ Freq"; Value = "30 @ 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Added Component: Designator=L4([Inductor] SMD 0603)
+Add component (AddParameter): Name = "Inductance"; Value = "100uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0603"; VariantName = "[No Variations]"
+Added Component: Designator=O1([XTAL] SMD 12MHz)
+Added Component: Designator=Q1([FET] P-Channel Mosfet)
+Add component (AddParameter): Name = "JLC Part #"; Value = "C2959854"; VariantName = "[No Variations]"
+Added Component: Designator=R1([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "2k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R2([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "2k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R3([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R4([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R5([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "5.6k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R6([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "100k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R7([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R8([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R9([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "100k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R10([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "1k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R11([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "1k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R12([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "1k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R13([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R14([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R15([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "33"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R16([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "2k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=R17([Res] SMD 1210)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "9.53k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"
+Added Component: Designator=S1([Switch] Pushbutton)
+Added Component: Designator=S2([Switch] Pushbutton)
+Added Component: Designator=SEG1([7seg] 4-Digit)
+Add component (AddParameter): Name = "Color"; Value = "Red"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = "474-COM-11405"; VariantName = "[No Variations]"
+Added Component: Designator=SR1([Res] SMD 3921)
+Add component (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "0.0002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "3921"; VariantName = "[No Variations]"
+Added Component: Designator=T1([Screw Terminal] 2pin)
+Added Component: Designator=T2([Screw Terminal] 4pin)
+Added Component: Designator=U1([MCU] RP2350A)
+Added Component: Designator=U2([IC] Dual Op-Ap)
+Add component (AddParameter): Name = "JLC Part #"; Value = "C105242"; VariantName = "[No Variations]"
+Added Component: Designator=U3([IC] 3V3 Regulator (2))
+Added Component: Designator=U4([IC] 16Mb Flash Memory)
+Added Component: Designator=U5([IC] Battery Monitor)
+Add component (AddParameter): Name = "Mouser Part #"; Value = "584-LTC2959IDDBTRMPB"; VariantName = "[No Variations]"
+Added Component: Designator=U6([DIP IC] 24pin, Socket)
+Add component (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U7([IC] Buck Converter)
+Added Component: Designator=X1([Port] USB Type-B Thru-Hole)
+Add component (AddParameter): Name = "JLC Part #"; Value = "C5714571"; VariantName = "[No Variations]"
+Added Component: Designator=X2([JST] 3PIN, MIL)
+Added Component: Designator=X3([Screw Terminal] 1996236)
+Add component (AddParameter): Name = "Mouser Part #"; Value = "651-1996236"; VariantName = "[No Variations]"
+Added Component: Designator=X4([Screw Terminal] 1996236)
+Add component (AddParameter): Name = "Mouser Part #"; Value = "651-1996236"; VariantName = "[No Variations]"
+Added Component: Designator=Z1([Inductor] SMD Varistor 0603)
+Add component (AddParameter): Name = "JLC Part #"; Value = "C840634"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0603"; VariantName = "[No Variations]"
+Added Component: Designator=Z2([Inductor] SMD Varistor 0603)
+Add component (AddParameter): Name = "JLC Part #"; Value = "C840634"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size Package"; Value = "0603"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=LX1 Pin=C1-1
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=C1-2
+Added Pin To Net: NetName=LX1 Pin=C2-1
+Added Pin To Net: NetName=LX1 Pin=C3-1
+Added Pin To Net: NetName=+3V3 Pin=C3-2
+Added Pin To Net: NetName=LX1 Pin=C4-1
+Added Pin To Net: NetName=Op B (+) Input Pin=C4-2
+Added Pin To Net: NetName=LX1 Pin=C5-1
+Added Pin To Net: NetName=+3V3 Pin=C5-2
+Added Pin To Net: NetName=USBVCC Pin=C6-1
+Added Pin To Net: NetName=LX1 Pin=C6-2
+Added Pin To Net: NetName=LX1 Pin=C7-1
+Added Pin To Net: NetName=XIN Pin=C7-2
+Added Pin To Net: NetName=LX1 Pin=C8-1
+Added Pin To Net: NetName=+3V3 Pin=C9-1
+Added Pin To Net: NetName=LX1 Pin=C9-2
+Added Pin To Net: NetName=LX1 Pin=C10-1
+Added Pin To Net: NetName=+1V1 Pin=C10-2
+Added Pin To Net: NetName=LX1 Pin=C11-1
+Added Pin To Net: NetName=+1V1 Pin=C11-2
+Added Pin To Net: NetName=LX1 Pin=C12-1
+Added Pin To Net: NetName=+1V1 Pin=C12-2
+Added Pin To Net: NetName=LX1 Pin=C13-1
+Added Pin To Net: NetName=+1V1 Pin=C13-2
+Added Pin To Net: NetName=LX1 Pin=C14-1
+Added Pin To Net: NetName=+3V3 Pin=C14-2
+Added Pin To Net: NetName=LX1 Pin=C15-1
+Added Pin To Net: NetName=+3V3 Pin=C15-2
+Added Pin To Net: NetName=LX1 Pin=C16-1
+Added Pin To Net: NetName=+3V3 Pin=C16-2
+Added Pin To Net: NetName=LX1 Pin=C17-1
+Added Pin To Net: NetName=+3V3 Pin=C17-2
+Added Pin To Net: NetName=LX1 Pin=C18-1
+Added Pin To Net: NetName=+3V3 Pin=C18-2
+Added Pin To Net: NetName=LX1 Pin=C19-1
+Added Pin To Net: NetName=+3V3 Pin=C19-2
+Added Pin To Net: NetName=LX1 Pin=C20-1
+Added Pin To Net: NetName=+3V3 Pin=C20-2
+Added Pin To Net: NetName=LX1 Pin=C21-1
+Added Pin To Net: NetName=+3V3 Pin=C21-2
+Added Pin To Net: NetName=LX1 Pin=C22-1
+Added Pin To Net: NetName=+3V3 Pin=C22-2
+Added Pin To Net: NetName=LX1 Pin=C23-1
+Added Pin To Net: NetName=+3V3 Pin=C23-2
+Added Pin To Net: NetName=LX1 Pin=C24-1
+Added Pin To Net: NetName=VREG Pin=C24-2
+Added Pin To Net: NetName=CF- Pin=C25-1
+Added Pin To Net: NetName=CF+ Pin=C25-2
+Added Pin To Net: NetName=LX1 Pin=C26-1
+Added Pin To Net: NetName=Load+ Pin=C26-2
+Added Pin To Net: NetName=LM2576_VIN Pin=C27-1
+Added Pin To Net: NetName=LX1 Pin=C27-2
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=C28-1
+Added Pin To Net: NetName=LX1 Pin=C28-2
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=D1-2
+Added Pin To Net: NetName=LX1 Pin=D2-2
+Added Pin To Net: NetName=LM2576_VIN Pin=D3-1
+Added Pin To Net: NetName=Battery+ Pin=D3-2
+Added Pin To Net: NetName=LM2576_OUTPUT Pin=D4-1
+Added Pin To Net: NetName=LX1 Pin=D4-2
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=USBVCC Pin=F1-2
+Added Pin To Net: NetName=Battery+ Pin=F2-1
+Added Pin To Net: NetName=Battery+ Pin=F2-1
+Added Pin To Net: NetName=Battery+ Pin=F2-1
+Added Pin To Net: NetName=Battery+ Pin=F2-1
+Added Pin To Net: NetName=NetF2_2 Pin=F2-2
+Added Pin To Net: NetName=NetF2_2 Pin=F2-2
+Added Pin To Net: NetName=NetF2_2 Pin=F2-2
+Added Pin To Net: NetName=NetF2_2 Pin=F2-2
+Added Pin To Net: NetName=Battery+ Pin=F3-1
+Added Pin To Net: NetName=Battery+ Pin=F3-1
+Added Pin To Net: NetName=Battery+ Pin=F3-1
+Added Pin To Net: NetName=Battery+ Pin=F3-1
+Added Pin To Net: NetName=NetF2_2 Pin=F3-2
+Added Pin To Net: NetName=NetF2_2 Pin=F3-2
+Added Pin To Net: NetName=NetF2_2 Pin=F3-2
+Added Pin To Net: NetName=NetF2_2 Pin=F3-2
+Added Pin To Net: NetName=+3V3 Pin=J1-1
+Added Pin To Net: NetName=Flash SS Pin=J1-2
+Added Pin To Net: NetName=GPIO0 Pin=J2-1
+Added Pin To Net: NetName=Flash SS Pin=J2-2
+Added Pin To Net: NetName=QSPI_SS Pin=J3-1
+Added Pin To Net: NetName=Flash SS Pin=J3-2
+Added Pin To Net: NetName=LX1 Pin=J4-1
+Added Pin To Net: NetName=USBGND Pin=J4-2
+Added Pin To Net: NetName=LX1 Pin=L1-1
+Added Pin To Net: NetName=LX2 Pin=L1-2
+Added Pin To Net: NetName=+1V1 Pin=L2-1
+Added Pin To Net: NetName=VREG_LX Pin=L2-2
+Added Pin To Net: NetName=USBGND Pin=L3-2
+Added Pin To Net: NetName=LM2576_OUTPUT Pin=L4-1
+Added Pin To Net: NetName=XIN Pin=O1-1
+Added Pin To Net: NetName=LX1 Pin=O1-2
+Added Pin To Net: NetName=LX1 Pin=O1-4
+Added Pin To Net: NetName=Op B Output Pin=Q1-1
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=Q1-2
+Added Pin To Net: NetName=USBVCC Pin=Q1-3
+Added Pin To Net: NetName=SDA Pin=R1-1
+Added Pin To Net: NetName=+3V3 Pin=R1-2
+Added Pin To Net: NetName=SCL Pin=R2-1
+Added Pin To Net: NetName=+3V3 Pin=R2-2
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=R3-2
+Added Pin To Net: NetName=Op B (+) Input Pin=R4-1
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=R4-2
+Added Pin To Net: NetName=GPIO24 Pin=R5-1
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=R5-2
+Added Pin To Net: NetName=3V3 En Pin=R6-1
+Added Pin To Net: NetName=LX1 Pin=R7-1
+Added Pin To Net: NetName=Op B (+) Input Pin=R7-2
+Added Pin To Net: NetName=LX1 Pin=R8-1
+Added Pin To Net: NetName=GPIO24 Pin=R8-2
+Added Pin To Net: NetName=LX1 Pin=R9-1
+Added Pin To Net: NetName=GPIO23 Pin=R9-2
+Added Pin To Net: NetName=U\S\B\_\B\O\O\T\ Pin=R10-1
+Added Pin To Net: NetName=QSPI_SS Pin=R10-2
+Added Pin To Net: NetName=XOUT Pin=R11-1
+Added Pin To Net: NetName=LX1 Pin=R12-2
+Added Pin To Net: NetName=DX_N Pin=R13-1
+Added Pin To Net: NetName=D_N Pin=R13-2
+Added Pin To Net: NetName=DX_P Pin=R14-1
+Added Pin To Net: NetName=D_P Pin=R14-2
+Added Pin To Net: NetName=VREG_AVDD Pin=R15-1
+Added Pin To Net: NetName=+3V3 Pin=R15-2
+Added Pin To Net: NetName=+3V3 Pin=R16-1
+Added Pin To Net: NetName=2959_GPIO Pin=R16-2
+Added Pin To Net: NetName=+3V3 Pin=R17-1
+Added Pin To Net: NetName=D_ISET Pin=R17-2
+Added Pin To Net: NetName=U\S\B\_\B\O\O\T\ Pin=S1-1
+Added Pin To Net: NetName=U\S\B\_\B\O\O\T\ Pin=S1-2
+Added Pin To Net: NetName=LX1 Pin=S1-3
+Added Pin To Net: NetName=LX1 Pin=S1-4
+Added Pin To Net: NetName=RUN Pin=S2-1
+Added Pin To Net: NetName=RUN Pin=S2-2
+Added Pin To Net: NetName=D_Seg_E Pin=SEG1-1
+Added Pin To Net: NetName=D_Seg_D Pin=SEG1-2
+Added Pin To Net: NetName=D_Seg_DP Pin=SEG1-3
+Added Pin To Net: NetName=D_Seg_C Pin=SEG1-4
+Added Pin To Net: NetName=D_Seg_G Pin=SEG1-5
+Added Pin To Net: NetName=D_DIG_3 Pin=SEG1-6
+Added Pin To Net: NetName=D_Seg_B Pin=SEG1-7
+Added Pin To Net: NetName=D_DIG_2 Pin=SEG1-8
+Added Pin To Net: NetName=D_DIG_1 Pin=SEG1-9
+Added Pin To Net: NetName=D_Seg_F Pin=SEG1-10
+Added Pin To Net: NetName=D_Seg_A Pin=SEG1-11
+Added Pin To Net: NetName=D_DIG_0 Pin=SEG1-12
+Added Pin To Net: NetName=Battery+ Pin=SR1-1
+Added Pin To Net: NetName=Load+ Pin=SR1-2
+Added Pin To Net: NetName=+3V3 Pin=T1-1
+Added Pin To Net: NetName=LX1 Pin=T1-2
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=T2-1
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=T2-2
+Added Pin To Net: NetName=LX1 Pin=T2-3
+Added Pin To Net: NetName=LX1 Pin=T2-4
+Added Pin To Net: NetName=+3V3 Pin=U1-1
+Added Pin To Net: NetName=GPIO0 Pin=U1-2
+Added Pin To Net: NetName=SCK1 Pin=U1-4
+Added Pin To Net: NetName=MOSI1 Pin=U1-5
+Added Pin To Net: NetName=+1V1 Pin=U1-6
+Added Pin To Net: NetName=D_LOAD (C\S\\) Pin=U1-8
+Added Pin To Net: NetName=+3V3 Pin=U1-11
+Added Pin To Net: NetName=2959_GPIO Pin=U1-13
+Added Pin To Net: NetName=SDA Pin=U1-14
+Added Pin To Net: NetName=SCL Pin=U1-15
+Added Pin To Net: NetName=TXD1 Pin=U1-16
+Added Pin To Net: NetName=RXD1 Pin=U1-17
+Added Pin To Net: NetName=+3V3 Pin=U1-20
+Added Pin To Net: NetName=XIN Pin=U1-21
+Added Pin To Net: NetName=XOUT Pin=U1-22
+Added Pin To Net: NetName=+1V1 Pin=U1-23
+Added Pin To Net: NetName=RUN Pin=U1-26
+Added Pin To Net: NetName=+3V3 Pin=U1-30
+Added Pin To Net: NetName=GPIO23 Pin=U1-35
+Added Pin To Net: NetName=+3V3 Pin=U1-38
+Added Pin To Net: NetName=+1V1 Pin=U1-39
+Added Pin To Net: NetName=+3V3 Pin=U1-44
+Added Pin To Net: NetName=+3V3 Pin=U1-45
+Added Pin To Net: NetName=VREG_AVDD Pin=U1-46
+Added Pin To Net: NetName=LX1 Pin=U1-47
+Added Pin To Net: NetName=VREG_LX Pin=U1-48
+Added Pin To Net: NetName=+3V3 Pin=U1-49
+Added Pin To Net: NetName=+1V1 Pin=U1-50
+Added Pin To Net: NetName=DX_N Pin=U1-51
+Added Pin To Net: NetName=DX_P Pin=U1-52
+Added Pin To Net: NetName=+3V3 Pin=U1-53
+Added Pin To Net: NetName=+3V3 Pin=U1-54
+Added Pin To Net: NetName=QSPI_SD3 Pin=U1-55
+Added Pin To Net: NetName=QSPI_SCLK Pin=U1-56
+Added Pin To Net: NetName=QSPI_SD0 Pin=U1-57
+Added Pin To Net: NetName=QSPI_SD2 Pin=U1-58
+Added Pin To Net: NetName=QSPI_SD1 Pin=U1-59
+Added Pin To Net: NetName=QSPI_SS Pin=U1-60
+Added Pin To Net: NetName=LX1 Pin=U1-61
+Added Pin To Net: NetName=LX1 Pin=U2-4
+Added Pin To Net: NetName=Op B (+) Input Pin=U2-5
+Added Pin To Net: NetName=+3V3 Pin=U2-6
+Added Pin To Net: NetName=Op B Output Pin=U2-7
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=U2-8
+Added Pin To Net: NetName=+3V3 Pin=U3-1
+Added Pin To Net: NetName=LX2 Pin=U3-2
+Added Pin To Net: NetName=LX1 Pin=U3-3
+Added Pin To Net: NetName=LX1 Pin=U3-4
+Added Pin To Net: NetName=3V3 En Pin=U3-6
+Added Pin To Net: NetName=GPIO23 Pin=U3-7
+Added Pin To Net: NetName=LX1 Pin=U3-9
+Added Pin To Net: NetName=+3V3 Pin=U3-10
+Added Pin To Net: NetName=LX1 Pin=U3-11
+Added Pin To Net: NetName=Flash SS Pin=U4-1
+Added Pin To Net: NetName=QSPI_SD1 Pin=U4-2
+Added Pin To Net: NetName=QSPI_SD3 Pin=U4-3
+Added Pin To Net: NetName=LX1 Pin=U4-4
+Added Pin To Net: NetName=QSPI_SD0 Pin=U4-5
+Added Pin To Net: NetName=QSPI_SCLK Pin=U4-6
+Added Pin To Net: NetName=QSPI_SD2 Pin=U4-7
+Added Pin To Net: NetName=+3V3 Pin=U4-8
+Added Pin To Net: NetName=Load+ Pin=U5-1
+Added Pin To Net: NetName=Load+ Pin=U5-2
+Added Pin To Net: NetName=CF+ Pin=U5-3
+Added Pin To Net: NetName=CF- Pin=U5-4
+Added Pin To Net: NetName=Battery+ Pin=U5-5
+Added Pin To Net: NetName=SCL Pin=U5-6
+Added Pin To Net: NetName=SDA Pin=U5-7
+Added Pin To Net: NetName=2959_GPIO Pin=U5-8
+Added Pin To Net: NetName=VREG Pin=U5-9
+Added Pin To Net: NetName=LX1 Pin=U5-10
+Added Pin To Net: NetName=MOSI1 Pin=U6-1
+Added Pin To Net: NetName=D_DIG_0 Pin=U6-2
+Added Pin To Net: NetName=LX1 Pin=U6-4
+Added Pin To Net: NetName=D_DIG_2 Pin=U6-6
+Added Pin To Net: NetName=D_DIG_3 Pin=U6-7
+Added Pin To Net: NetName=LX1 Pin=U6-9
+Added Pin To Net: NetName=D_DIG_1 Pin=U6-11
+Added Pin To Net: NetName=D_LOAD (C\S\\) Pin=U6-12
+Added Pin To Net: NetName=SCK1 Pin=U6-13
+Added Pin To Net: NetName=D_Seg_A Pin=U6-14
+Added Pin To Net: NetName=D_Seg_F Pin=U6-15
+Added Pin To Net: NetName=D_Seg_B Pin=U6-16
+Added Pin To Net: NetName=D_Seg_G Pin=U6-17
+Added Pin To Net: NetName=D_ISET Pin=U6-18
+Added Pin To Net: NetName=+3V3 Pin=U6-19
+Added Pin To Net: NetName=D_Seg_C Pin=U6-20
+Added Pin To Net: NetName=D_Seg_E Pin=U6-21
+Added Pin To Net: NetName=D_Seg_DP Pin=U6-22
+Added Pin To Net: NetName=D_Seg_D Pin=U6-23
+Added Pin To Net: NetName=LM2576_VIN Pin=U7-1
+Added Pin To Net: NetName=LM2576_OUTPUT Pin=U7-2
+Added Pin To Net: NetName=LX1 Pin=U7-3
+Added Pin To Net: NetName=LM2576_FEEDBACK Pin=U7-4
+Added Pin To Net: NetName=LX1 Pin=U7-5
+Added Pin To Net: NetName=LX1 Pin=U7-6
+Added Pin To Net: NetName=LX1 Pin=U7-6
+Added Pin To Net: NetName=LX1 Pin=U7-6
+Added Pin To Net: NetName=NetF1_1 Pin=X1-1
+Added Pin To Net: NetName=D_N Pin=X1-2
+Added Pin To Net: NetName=D_P Pin=X1-3
+Added Pin To Net: NetName=USBGND Pin=X1-4
+Added Pin To Net: NetName=TXD1 Pin=X2-1
+Added Pin To Net: NetName=RXD1 Pin=X2-2
+Added Pin To Net: NetName=LX1 Pin=X2-3
+Added Pin To Net: NetName=NetF2_2 Pin=X3-1
+Added Pin To Net: NetName=NetF2_2 Pin=X3-1
+Added Pin To Net: NetName=NetF2_2 Pin=X3-1
+Added Pin To Net: NetName=LX1 Pin=X3-2
+Added Pin To Net: NetName=LX1 Pin=X3-2
+Added Pin To Net: NetName=LX1 Pin=X3-2
+Added Pin To Net: NetName=Load+ Pin=X4-1
+Added Pin To Net: NetName=Load+ Pin=X4-1
+Added Pin To Net: NetName=Load+ Pin=X4-1
+Added Pin To Net: NetName=LX1 Pin=X4-2
+Added Pin To Net: NetName=LX1 Pin=X4-2
+Added Pin To Net: NetName=LX1 Pin=X4-2
+Added Pin To Net: NetName=D_P Pin=Z1-2
+Added Pin To Net: NetName=D_N Pin=Z2-2
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=D1-1
+Added Pin To Net: NetName=NetC2_2 Pin=R6-2
+Added Pin To Net: NetName=NetC2_2 Pin=U3-5
+Added Pin To Net: NetName=NetC2_2 Pin=U3-8
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=O1-3
+Added Pin To Net: NetName=NetC8_2 Pin=R11-2
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R3-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetL3_1 Pin=L3-1
+Added Pin To Net: NetName=NetL3_1 Pin=X1-S1
+Added Pin To Net: NetName=NetL3_1 Pin=X1-S2
+Added Pin To Net: NetName=NetL3_1 Pin=Z1-1
+Added Pin To Net: NetName=NetL3_1 Pin=Z2-1
+Added Net: Name=NetL3_1
+Added Pin To Net: NetName=NetR12_1 Pin=R12-1
+Added Pin To Net: NetName=NetR12_1 Pin=S2-3
+Added Pin To Net: NetName=NetR12_1 Pin=S2-4
+Added Net: Name=NetR12_1
+Added Member To Class: ClassName=Primary MCU Member=Component C1 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C2 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C3 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C4 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C5 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C6 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C7 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C8 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C9 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C10 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C11 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C12 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C13 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C14 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C15 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C16 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C17 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C18 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C19 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C20 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C21 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C22 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Primary MCU Member=Component C23 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C24 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C25 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=Battery Monitoring Member=Component C26 [Cap] SMD Nonpolarized
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component C27 SMD Polarized
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component C28 Thru-Hole Polarized
+Added Member To Class: ClassName=Primary MCU Member=Component D1 Schottky
+Added Member To Class: ClassName=Primary MCU Member=Component D2 LED
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component D3 Rectifier
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component D4 1N5822
+Added Member To Class: ClassName=Primary MCU Member=Component F1 PTC
+Added Member To Class: ClassName=Battery Monitoring Member=Component F2 Thru-Hole
+Added Member To Class: ClassName=Battery Monitoring Member=Component F3 Thru-Hole
+Added Member To Class: ClassName=Primary MCU Member=Component J1 [Jump] SMD Jumper
+Added Member To Class: ClassName=Primary MCU Member=Component J2 [Jump] SMD Jumper
+Added Member To Class: ClassName=Primary MCU Member=Component J3 [Jump] SMD Jumper
+Added Member To Class: ClassName=Primary MCU Member=Component J4 [Jump] SMD Jumper
+Added Member To Class: ClassName=Primary MCU Member=Component L1 SMD Inductor
+Added Member To Class: ClassName=Primary MCU Member=Component L2 SMD Inductor
+Added Member To Class: ClassName=Primary MCU Member=Component L3 652-MH2029-300Y
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component L4 SMD Inductor
+Added Member To Class: ClassName=Primary MCU Member=Component O1 12MHz
+Added Member To Class: ClassName=Primary MCU Member=Component Q1 PMV48XP
+Added Member To Class: ClassName=Primary MCU Member=Component R1 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R2 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R3 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R4 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R5 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R6 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R7 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R8 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R9 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R10 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R11 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R12 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R13 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R14 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R15 [Res] SMD Resistor
+Added Member To Class: ClassName=Battery Monitoring Member=Component R16 [Res] SMD Resistor
+Added Member To Class: ClassName=Seven-Seg Displays Member=Component R17 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component S1 Standard pushbutton
+Added Member To Class: ClassName=Primary MCU Member=Component S2 Standard pushbutton
+Added Member To Class: ClassName=Seven-Seg Displays Member=Component SEG1 [7seg] 4-Digit
+Added Member To Class: ClassName=Battery Monitoring Member=Component SR1 [Res] SMD Resistor
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component T1 [Screw Terminal] 2pin
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component T2 4pin Screw Terminal
+Added Member To Class: ClassName=Primary MCU Member=Component U1 [MCU] RP2350A
+Added Member To Class: ClassName=Primary MCU Member=Component U2 LMV358IDGKR
+Added Member To Class: ClassName=Primary MCU Member=Component U3 RT6150B-33GQW
+Added Member To Class: ClassName=Primary MCU Member=Component U4 W25Q128JVS
+Added Member To Class: ClassName=Battery Monitoring Member=Component U5 LTC2959
+Added Member To Class: ClassName=Seven-Seg Displays Member=Component U6 474-COM-11405
+Added Member To Class: ClassName=DC Step-Down Converter Member=Component U7 LM2576
+Added Member To Class: ClassName=Primary MCU Member=Component X1 [Port] USB Type-B Female (Thru-Hole)
+Added Member To Class: ClassName=Primary MCU Member=Component X2 1877285-3
+Added Member To Class: ClassName=Battery Monitoring Member=Component X3 1996236
+Added Member To Class: ClassName=Battery Monitoring Member=Component X4 1996236
+Added Member To Class: ClassName=Primary MCU Member=Component Z1 [Inductor] SMD Varistor
+Added Member To Class: ClassName=Primary MCU Member=Component Z2 [Inductor] SMD Varistor

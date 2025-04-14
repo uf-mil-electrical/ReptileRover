@@ -1,0 +1,87 @@
+Removed Pin From Net: NetName=+3V3 Pin=U1-1
+Removed Pin From Net: NetName=GPIO0 Pin=U1-2
+Removed Pin From Net: NetName=SCK1 Pin=U1-4
+Removed Pin From Net: NetName=MOSI1 Pin=U1-5
+Removed Pin From Net: NetName=+1V1 Pin=U1-6
+Removed Pin From Net: NetName=D_LOAD (C\S\\) Pin=U1-8
+Removed Pin From Net: NetName=+3V3 Pin=U1-11
+Removed Pin From Net: NetName=2959_GPIO Pin=U1-13
+Removed Pin From Net: NetName=SDA Pin=U1-14
+Removed Pin From Net: NetName=SCL Pin=U1-15
+Removed Pin From Net: NetName=TXD1 Pin=U1-16
+Removed Pin From Net: NetName=RXD1 Pin=U1-17
+Removed Pin From Net: NetName=+3V3 Pin=U1-20
+Removed Pin From Net: NetName=XIN Pin=U1-21
+Removed Pin From Net: NetName=XOUT Pin=U1-22
+Removed Pin From Net: NetName=+1V1 Pin=U1-23
+Removed Pin From Net: NetName=RUN Pin=U1-26
+Removed Pin From Net: NetName=+3V3 Pin=U1-30
+Removed Pin From Net: NetName=Green LED Pin=U1-31
+Removed Pin From Net: NetName=Yellow LED Pin=U1-32
+Removed Pin From Net: NetName=Red LED Pin=U1-33
+Removed Pin From Net: NetName=GPIO23 Pin=U1-35
+Removed Pin From Net: NetName=+3V3 Pin=U1-38
+Removed Pin From Net: NetName=+1V1 Pin=U1-39
+Removed Pin From Net: NetName=+3V3 Pin=U1-44
+Removed Pin From Net: NetName=+3V3 Pin=U1-45
+Removed Pin From Net: NetName=VREG_AVDD Pin=U1-46
+Removed Pin From Net: NetName=LX1 Pin=U1-47
+Removed Pin From Net: NetName=VREG_LX Pin=U1-48
+Removed Pin From Net: NetName=+3V3 Pin=U1-49
+Removed Pin From Net: NetName=+1V1 Pin=U1-50
+Removed Pin From Net: NetName=DX_N Pin=U1-51
+Removed Pin From Net: NetName=DX_P Pin=U1-52
+Removed Pin From Net: NetName=+3V3 Pin=U1-53
+Removed Pin From Net: NetName=+3V3 Pin=U1-54
+Removed Pin From Net: NetName=QSPI_SD3 Pin=U1-55
+Removed Pin From Net: NetName=QSPI_SCLK Pin=U1-56
+Removed Pin From Net: NetName=QSPI_SD0 Pin=U1-57
+Removed Pin From Net: NetName=QSPI_SD2 Pin=U1-58
+Removed Pin From Net: NetName=QSPI_SD1 Pin=U1-59
+Removed Pin From Net: NetName=QSPI_SS Pin=U1-60
+Removed Pin From Net: NetName=LX1 Pin=U1-61
+Removed Member From Class: ClassName=Primary MCU Member=U1
+Added Component: Designator=U?([MCU] RP2350A)
+Added Pin To Net: NetName=+3V3 Pin=U?-1
+Added Pin To Net: NetName=GPIO0 Pin=U?-2
+Added Pin To Net: NetName=SCK1 Pin=U?-4
+Added Pin To Net: NetName=MOSI1 Pin=U?-5
+Added Pin To Net: NetName=+1V1 Pin=U?-6
+Added Pin To Net: NetName=D_LOAD (C\S\\) Pin=U?-8
+Added Pin To Net: NetName=+3V3 Pin=U?-11
+Added Pin To Net: NetName=2959_GPIO Pin=U?-13
+Added Pin To Net: NetName=SDA Pin=U?-14
+Added Pin To Net: NetName=SCL Pin=U?-15
+Added Pin To Net: NetName=TXD1 Pin=U?-16
+Added Pin To Net: NetName=RXD1 Pin=U?-17
+Added Pin To Net: NetName=+3V3 Pin=U?-20
+Added Pin To Net: NetName=XIN Pin=U?-21
+Added Pin To Net: NetName=XOUT Pin=U?-22
+Added Pin To Net: NetName=+1V1 Pin=U?-23
+Added Pin To Net: NetName=RUN Pin=U?-26
+Added Pin To Net: NetName=+3V3 Pin=U?-30
+Added Pin To Net: NetName=Green LED Pin=U?-31
+Added Pin To Net: NetName=Yellow LED Pin=U?-32
+Added Pin To Net: NetName=Red LED Pin=U?-33
+Added Pin To Net: NetName=GPIO23 Pin=U?-35
+Added Pin To Net: NetName=+3V3 Pin=U?-38
+Added Pin To Net: NetName=+1V1 Pin=U?-39
+Added Pin To Net: NetName=+3V3 Pin=U?-44
+Added Pin To Net: NetName=+3V3 Pin=U?-45
+Added Pin To Net: NetName=VREG_AVDD Pin=U?-46
+Added Pin To Net: NetName=LX1 Pin=U?-47
+Added Pin To Net: NetName=VREG_LX Pin=U?-48
+Added Pin To Net: NetName=+3V3 Pin=U?-49
+Added Pin To Net: NetName=+1V1 Pin=U?-50
+Added Pin To Net: NetName=DX_N Pin=U?-51
+Added Pin To Net: NetName=DX_P Pin=U?-52
+Added Pin To Net: NetName=+3V3 Pin=U?-53
+Added Pin To Net: NetName=+3V3 Pin=U?-54
+Added Pin To Net: NetName=QSPI_SD3 Pin=U?-55
+Added Pin To Net: NetName=QSPI_SCLK Pin=U?-56
+Added Pin To Net: NetName=QSPI_SD0 Pin=U?-57
+Added Pin To Net: NetName=QSPI_SD2 Pin=U?-58
+Added Pin To Net: NetName=QSPI_SD1 Pin=U?-59
+Added Pin To Net: NetName=QSPI_SS Pin=U?-60
+Added Pin To Net: NetName=LX1 Pin=U?-61
+Added Member To Class: ClassName=Primary MCU Member=Component U? [MCU] RP2350A

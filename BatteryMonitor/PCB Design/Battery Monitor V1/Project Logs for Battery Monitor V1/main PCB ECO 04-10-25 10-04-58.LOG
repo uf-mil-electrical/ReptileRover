@@ -1,0 +1,96 @@
+Change Component Footprint: Designator=C2 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C3 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C5 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C6 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C7 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C8 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C9 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=C14 Old Footprint=[Cap] SMD 1210 New Footprint=[Cap] SMD 0805
+Change Component Footprint: Designator=R5 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R6 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R8 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R9 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R11 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R13 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R14 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change Component Footprint: Designator=R15 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
+Change component parameters: Designator = "C2" ("C2"); Footprint = "[Cap] SMD 1210"; UniqueID = "\PLYCPJAO" ("\PLYCPJAO")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "[Cap] SMD 1210"; UniqueID = "\HYURNYJI" ("\HYURNYJI")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "[Cap] SMD 1210"; UniqueID = "\PGDSLVEX" ("\PGDSLVEX")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "[Cap] SMD 1210"; UniqueID = "\VGMIFMPQ" ("\VGMIFMPQ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "[Cap] SMD 1210"; UniqueID = "\AJILCHLV" ("\AJILCHLV")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "15pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "[Cap] SMD 1210"; UniqueID = "\EFKPRFYT" ("\EFKPRFYT")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "15pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "[Cap] SMD 1210"; UniqueID = "\WOJJCLPQ" ("\WOJJCLPQ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C14" ("C14"); Footprint = "[Cap] SMD 1210"; UniqueID = "\LJFUGVXT" ("\LJFUGVXT")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "[Res] SMD 1210"; UniqueID = "\HXQKVWHY" ("\HXQKVWHY")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "5.6k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "[Res] SMD 1210"; UniqueID = "\MWDUPXTV" ("\MWDUPXTV")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R8" ("R8"); Footprint = "[Res] SMD 1210"; UniqueID = "\SAXBBCSW" ("\SAXBBCSW")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9" ("R9"); Footprint = "[Res] SMD 1210"; UniqueID = "\NDTJQJLJ" ("\NDTJQJLJ")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R11" ("R11"); Footprint = "[Res] SMD 1210"; UniqueID = "\XWMBPVRF" ("\XWMBPVRF")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "1k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R13" ("R13"); Footprint = "[Res] SMD 1210"; UniqueID = "\OJYFUGRD" ("\OJYFUGRD")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "27"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R14" ("R14"); Footprint = "[Res] SMD 1210"; UniqueID = "\XNORGOSU" ("\XNORGOSU")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "27"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R15" ("R15"); Footprint = "[Res] SMD 1210"; UniqueID = "\EPAIASPU" ("\EPAIASPU")
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "33"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"

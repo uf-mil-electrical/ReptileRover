@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=RXD1 Pin=X2-1
+Removed Pin From Net: NetName=TXD1 Pin=X2-2
+Removed Member From Class: ClassName=Primary MCU Member=X2
+Added Component: Designator=X?([JST] 3PIN)
+Added Pin To Net: NetName=TXD1 Pin=X?-1
+Added Pin To Net: NetName=RXD1 Pin=X?-2
+Added Pin To Net: NetName=LX1 Pin=X?-3
+Added Member To Class: ClassName=Primary MCU Member=Component X? [JST] Female 3 Pin

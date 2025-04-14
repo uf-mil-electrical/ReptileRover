@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=TXD1 Pin=X2-1
+Removed Pin From Net: NetName=RXD1 Pin=X2-2
+Removed Pin From Net: NetName=LX1 Pin=X2-3
+Change Component Footprint: Designator=X2 Old Footprint=[JST] 3PIN, MIL New Footprint=[JST] 2PIN
+Change Component Comment : Designator=X2 Old Comment=1877285-3 New Comment=[JST] Female 2 Pin
+Added Pin To Net: NetName=RXD1 Pin=X2-1
+Added Pin To Net: NetName=TXD1 Pin=X2-2
