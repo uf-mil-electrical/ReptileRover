@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=QSPI_SD3 Pin=U2-3
+Removed Pin From Net: NetName=QSPI_SD2 Pin=U2-7
+Added Pin To Net: NetName=QSPI_SD2 Pin=U2-3
+Added Pin To Net: NetName=QSPI_SD3 Pin=U2-7

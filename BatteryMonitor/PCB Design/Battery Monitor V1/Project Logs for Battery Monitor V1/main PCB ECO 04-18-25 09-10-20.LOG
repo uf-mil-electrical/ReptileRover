@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=U8 NewDesignator=U7
+Change Component Designator: OldDesignator=U9 NewDesignator=U8
+Added Member To Class: ClassName=Primary MCU Member=Component R11 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R19 [Res] SMD Resistor

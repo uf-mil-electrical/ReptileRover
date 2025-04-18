@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=GND Pin=X3-2
+Removed Pin From Net: NetName=GND Pin=X3-2
+Removed Pin From Net: NetName=GND Pin=X3-2
+Removed Pin From Net: NetName=Load+ Pin=X4-1
+Removed Pin From Net: NetName=Load+ Pin=X4-1
+Removed Pin From Net: NetName=Load+ Pin=X4-1
+Removed Pin From Net: NetName=GND Pin=X4-2
+Removed Pin From Net: NetName=GND Pin=X4-2
+Removed Pin From Net: NetName=GND Pin=X4-2
+Change Comment: Unknown Component : X3
+Change Comment: Unknown Component : X4
+Change component parameters: Component "X3" not found
+Change component parameters: Component "X4" not found
+Add Pin To Net: Unknown Pin: Pin X4-1
+Add Pin To Net: Unknown Pin: Pin X5-1
+Add Pin To Net: Unknown Pin: Pin X6-1
+Add Pin To Net: Unknown Pin: Pin X7-1
+Add Pin To Net: Unknown Pin: Pin X8-1
+Add Pin To Net: Unknown Pin: Pin X9-1
+Add Pin To Net: Unknown Pin: Pin X10-1
+Add Class Member: Failed to add class member : Component X5 B6A-PCB
+Add Class Member: Failed to add class member : Component X6 B6A-PCB
+Add Class Member: Failed to add class member : Component X7 B6A-PCB
+Add Class Member: Failed to add class member : Component X8 B6A-PCB
+Add Class Member: Failed to add class member : Component X9 B6A-PCB
+Add Class Member: Failed to add class member : Component X10 B6A-PCB

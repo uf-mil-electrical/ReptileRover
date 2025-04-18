@@ -1,0 +1,9 @@
+Removed Member From Class: ClassName=Seven-Seg Displays Member=R12
+Removed Member From Class: ClassName=Primary MCU Member=R13
+Removed Member From Class: ClassName=Battery Monitoring Member=R18
+Change Component Designator: OldDesignator=U7 NewDesignator=U9
+Added Member To Class: ClassName=Primary MCU Member=Component R11 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R12 [Res] SMD Resistor
+Added Member To Class: ClassName=Seven-Seg Displays Member=Component R13 [Res] SMD Resistor
+Added Member To Class: ClassName=Primary MCU Member=Component R19 [Res] SMD Resistor
+Added Member To Class: ClassName=Battery Monitoring Member=Component R21 [Res] SMD Resistor

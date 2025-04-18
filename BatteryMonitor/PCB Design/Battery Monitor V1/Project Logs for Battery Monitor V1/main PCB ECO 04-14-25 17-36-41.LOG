@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=L4 Old Footprint=[Inductor] SMD 0603 New Footprint=[Inductor] SMD 1210
+Change Component Comment : Designator=U7 Old Comment=474-COM-11405 New Comment=MAX7219
+Change component parameters: Designator = "L4" ("L4"); Footprint = "[Inductor] SMD 0603"; UniqueID = "\RTOGQBFE" ("\RTOGQBFE")
+Change component parameters (AddParameter): Name = "Inductance"; Value = "100uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size Package"; Value = "1210"; VariantName = "[No Variations]"

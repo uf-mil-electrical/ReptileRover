@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GPIO23 Pin=R11-2
+Removed Pin From Net: NetName=GPIO23 Pin=U3-7
+Change Component Description : Designator=D5 Old Description=Generic New Description=PMEG6010ELR
+Added Pin To Net: NetName=NetR11_2 Pin=R11-2
+Added Pin To Net: NetName=NetR11_2 Pin=U3-7
+Added Net: Name=NetR11_2

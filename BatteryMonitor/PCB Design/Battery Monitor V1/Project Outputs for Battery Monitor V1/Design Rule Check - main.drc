@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\russe\Repositories\MIL\ReptileRover\BatteryMonitor\PCB Design\Battery Monitor V1\main.PcbDoc
-Date     : 04/14/25
-Time     : 10:23:09
+Date     : 04/18/25
+Time     : 09:16:51
 
 Processing Rule : Clearance Constraint (Gap=0.1mm) (All),(All)
 Rule Violations :0
@@ -21,7 +21,7 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.2mm) (Max=1500mm) (Preferred=0.2mm) (All)
+Processing Rule : Width Constraint (Min=0.2mm) (Max=1500mm) (Preferred=0.3mm) (All)
 Rule Violations :0
 
 Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
@@ -72,4 +72,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:08
+Time Elapsed        : 00:00:11

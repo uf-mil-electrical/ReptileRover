@@ -1101,8 +1101,9 @@ Net1=NetName=+1V1|NetColor=$0066D9FF
 Net2=NetName=+3V3|NetColor=$00AFA576
 Net3=NetName=GND|NetColor=$00666666
 Net4=NetName=LM2576_FEEDBACK|NetColor=$00C37C8E
-Net5=NetName=LX1|NetColor=$00666666
+Net5=NetName=LX1|NetColor=clBlack
 Net6=NetName=U3 VCC|NetColor=$00C37C8E
+Net7=NetName=VREG_PGND|NetColor=$00666666
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0

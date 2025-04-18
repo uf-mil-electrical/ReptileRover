@@ -1,0 +1,24 @@
+Added Component: Designator=X3([Port] Lug, 10awg, 60A)
+Added Component: Designator=X4([Port] Lug, 10awg, 60A)
+Added Component: Designator=X5([Port] Lug, 10awg, 60A)
+Added Component: Designator=X6([Port] Lug, 10awg, 60A)
+Added Component: Designator=X8([Port] Lug, 10awg, 60A)
+Added Component: Designator=X9([Port] Lug, 10awg, 60A)
+Added Component: Designator=X10([Port] Lug, 10awg, 60A)
+Added Component: Designator=X11([Port] Lug, 10awg, 60A)
+Added Pin To Net: NetName=NetF2_2 Pin=X3-1
+Added Pin To Net: NetName=NetF2_2 Pin=X4-1
+Added Pin To Net: NetName=Load+ Pin=X5-1
+Added Pin To Net: NetName=Load+ Pin=X6-1
+Added Pin To Net: NetName=GND Pin=X8-1
+Added Pin To Net: NetName=GND Pin=X9-1
+Added Pin To Net: NetName=GND Pin=X10-1
+Added Pin To Net: NetName=GND Pin=X11-1
+Added Member To Class: ClassName=Battery Monitoring Member=Component X3 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X4 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X5 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X6 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X8 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X9 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X10 B6A-PCB
+Added Member To Class: ClassName=Battery Monitoring Member=Component X11 B6A-PCB
