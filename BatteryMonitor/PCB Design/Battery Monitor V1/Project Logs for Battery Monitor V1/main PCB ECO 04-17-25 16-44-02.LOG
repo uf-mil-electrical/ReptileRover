@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=+5V Pin=R8-2
-Removed Pin From Net: NetName=GND Pin=R9-1
-Removed Member From Class: ClassName=Primary MCU Member=R8
-Removed Member From Class: ClassName=Primary MCU Member=R9

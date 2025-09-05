@@ -1,5 +1,0 @@
-Removed Member From Class: ClassName=DC Step-Down Converter Member=C23
-Removed Member From Class: ClassName=DC Step-Down Converter Member=C26
-Added Member To Class: ClassName=Primary MCU Member=Component C25 [Cap] SMD Nonpolarized
-Added Member To Class: ClassName=DC Step-Down Converter Member=Component C27 SMD Polarized
-Added Member To Class: ClassName=DC Step-Down Converter Member=Component C28 Thru-Hole Polarized

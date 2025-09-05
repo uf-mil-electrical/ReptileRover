@@ -1,7 +1,0 @@
-Removed Member From Class: ClassName=Battery Monitoring Member=U4
-Removed Member From Class: ClassName=Battery Monitoring Member=U8
-Change Component Footprint: Designator=R21 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
-Change Component Footprint: Designator=R22 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
-Added Member To Class: ClassName=Primary MCU Member=Component U3 RT6150B-33GQW
-Added Member To Class: ClassName=Battery Monitoring Member=Component U5 INA226
-Added Member To Class: ClassName=Battery Monitoring Member=Component U6 TMCS1100A3QDR

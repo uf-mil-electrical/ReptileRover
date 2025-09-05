@@ -1,5 +1,0 @@
-Removed Member From Class: ClassName=DC Step-Down Converter Member=D3
-Removed Member From Class: ClassName=DC Step-Down Converter Member=D4
-Added Member To Class: ClassName=Primary MCU Member=Component D5 Schottky
-Added Member To Class: ClassName=DC Step-Down Converter Member=Component D6 Rectifier
-Added Member To Class: ClassName=DC Step-Down Converter Member=Component D7 1N5822

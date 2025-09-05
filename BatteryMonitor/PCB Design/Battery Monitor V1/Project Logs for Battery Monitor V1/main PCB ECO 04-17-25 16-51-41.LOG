@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=L1-1
-Removed Pin From Net: NetName=GND Pin=U3-4
-Added Pin To Net: NetName=LX1 Pin=L1-1
-Added Pin To Net: NetName=LX1 Pin=U3-4
-Added Net: Name=LX1
-Added Rule: Name=Schematic Supply Nets_25

@@ -1,6 +1,0 @@
-Change Component Footprint: Designator=R5 Old Footprint=[Res] SMD 1210 New Footprint=[Res] SMD 0805
-Change component parameters: Designator = "R5" ("R5"); Footprint = "[Res] SMD 1210"; UniqueID = "\RSIGYCZP" ("\RSIGYCZP")
-Change component parameters (AddParameter): Name = "JLC Part #"; Value = ""; VariantName = "[No Variations]"
-Change component parameters (AddParameter): Name = "Mouser Part #"; Value = ""; VariantName = "[No Variations]"
-Change component parameters (AddParameter): Name = "Resistance"; Value = "2k"; VariantName = "[No Variations]"
-Change component parameters (AddParameter): Name = "Size Package"; Value = "0805"; VariantName = "[No Variations]"

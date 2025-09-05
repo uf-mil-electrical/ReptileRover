@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=MOSI1 Pin=U9-2
-Removed Pin From Net: NetName=SCK1 Pin=U9-3
-Removed Pin From Net: NetName=SCK1 5V Pin=U9-18
-Removed Pin From Net: NetName=MOSI1 5V Pin=U9-19
-Added Pin To Net: NetName=SCK1 Pin=U9-2
-Added Pin To Net: NetName=MOSI1 Pin=U9-3
-Added Pin To Net: NetName=MOSI1 5V Pin=U9-18
-Added Pin To Net: NetName=SCK1 5V Pin=U9-19
