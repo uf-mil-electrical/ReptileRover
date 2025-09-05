@@ -135,23 +135,6 @@ GenerateClassCluster=0
 DocumentUniqueId=DQWTKGKF
 
 [Document6]
-DocumentPath=..\..\..\..\..\OneDrive\Documents\AltiumLL\Library\Miscellaneous Connectors\Miscellaneous Connectors.LibPkg
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
 DocumentPath=..\..\..\..\..\OneDrive\Documents\AltiumLL\Library\Miscellaneous Connectors\Project Outputs for Miscellaneous Connectors\Miscellaneous Connectors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=..\..\..\..\..\OneDrive\Documents\AltiumLL\Library\Miscellaneous Devices\Project Outputs for Miscellaneous Devices\Miscellaneous Devices.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=main.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MKYKIBTO
 
-[Document10]
+[Document9]
 DocumentPath=gerberX2_4_8.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=NCdrill_4_8.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
